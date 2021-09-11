@@ -1,0 +1,16 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.icons-nav {
+    margin: 0 35px;
+}
+
+.border-bottom-white {
+    border-bottom: 4px solid white;
+}
