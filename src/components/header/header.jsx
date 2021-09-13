@@ -9,12 +9,12 @@ export function Header() {
     return (
         <header>
             <div class="flex-container border-bottom-white">
-                <div class="main-logo"><img class="fixed" width="280" src={Et }/></div>
-                <div class="icons-nav"><img width="135" src={Inicio }/></div>
-                <div class="icons-nav"><img width="135" src={Pesquisa }/></div>
-                <div class="icons-nav"><img width="135" src={Cardapio }/></div>
-                <div class="icons-nav"><img width="135" src={Contato }/></div>
-                <div class="icons-nav"><img width="135" src={Contato }/></div>
+                <div class="main-logo"><img class="fixed" width="280" src={Et} alt="Logo" /></div>
+                <div class="icons-nav"><img width="135" src={Inicio} alt="Inicio" /></div>
+                <div class="icons-nav"><img width="135" src={Pesquisa} alt="Pesquisa" /></div>
+                <div class="icons-nav"><img width="135" src={Cardapio} alt="Cardapio" /></div>
+                <div class="icons-nav"><img width="135" src={Contato} alt="Contato" /></div>
+                <div class="icons-nav"><img width="135" src={Contato} alt="Contato" /></div>
             </div>
         </header>
     )
