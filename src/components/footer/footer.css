@@ -3,7 +3,7 @@
 }
 
 .icons-nav {
-    margin: 0 25px;
+    margin: 5px 5px;
 }
 
 .border-bottom-white02 {
@@ -19,6 +19,15 @@
     display: flex;
 }
 
+.social-text {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+}
+
 .social-midias {
     display: flex;
+    padding: 10px;
 }
+

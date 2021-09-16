@@ -21,7 +21,9 @@ export function Footer() {
                             <p>Fique tranquilo no conforto de sua casa, que nós entregamos</p>
                         </div>
                         <div class="col-6">
-                            <p>Nossas Redes Sociais</p>
+                            <div class="social-text">
+                                <p>Nossas Redes Sociais</p>
+                            </div>
                             <div class="social-midias">
                                 <div class="icons-nav"><img width="135" src={Whatsapp }/></div>
                                 <div class="icons-nav"><img width="135" src={Twitter }/></div>
