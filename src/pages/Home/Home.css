@@ -1,0 +1,20 @@
+.sr-only{
+    display: none;
+}
+
+.slide{
+    border-bottom: 4px solid #fff;
+}
+
+.carousel-inner{
+    height: 100%;
+    /* background-color: red; */
+}
+
+.carousel-item{
+    height: 100%;
+}
+.carousel-item img{
+    object-fit: cover;
+    height: 100%;
+}
