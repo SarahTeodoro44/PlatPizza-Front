@@ -1,10 +1,14 @@
-import SearchField from "react-search-field";
 import { Header } from "../../components/header/header";
 import { Footer } from "../../components/footer/footer";
+import SearchPage  from '../../components/SearchPage';
 import Slide1 from '../../assets/images/banner_foto.png';
-import vegan from '../../assets/images/vegana.jpg';
-import glutem from '../../assets/images/sem-glutem.jpg';
-import lactose from '../../assets/images/lactose.jpg';
+import Vegan from '../../assets/images/vegana.jpg';
+import Gluten from '../../assets/images/sem-glutem.jpg';
+import Lactose from '../../assets/images/lactose.jpg';
+import VeganIcon from '../../assets/icons/vegana.png';
+import LactoseIcon from '../../assets/icons/lactose.png';
+import GlutenIcon from '../../assets/icons/semGluten.png';
+import Pesquisa from '../../assets/icons/pesquisa.png';
 import './Home.css';
 
 export function Home() {
@@ -41,21 +45,29 @@ export function Home() {
                         </button>
                     </div>
                 </section>
-            <div class="container"> <br></br> <br></br> <br></br>
+            <div class="container"> <br></br> <br></br> <br></br> 
+            <div>
+            < SearchPage  />
+             <img class="search" src={Pesquisa} alt="icone pizza vegana"/> 
+             </div>
+             <br></br> <br></br> <br></br><br></br> <br></br> <br></br> <br></br> <br></br>
                 <div class="row">
                     <div class="col-md-4">
                     <div class="gallery-box">
-                    <img  src={vegan} alt="imagem 1"/>
+                    <img class="iconspage" src={VeganIcon} alt="icone pizza vegana"/> 
+                    <img  src={Vegan} alt="pizza vegana"/>
                     </div>
                     </div>
                     <div class="col-md-4">
                     <div class="gallery-box">
-                    <img  src={lactose} alt="imagem 2" />
+                    <img class="iconspage" src={LactoseIcon} alt="icone pizza sem lactose"/> 
+                    <img  src={Lactose} alt="pizza sem lactose" />
                     </div>
                     </div>
                     <div class="col-md-4">
                     <div class="gallery-box">
-                    <img  src={glutem} alt="imagem 3" />
+                    <img class="iconspage" src={GlutenIcon} alt="icone piza sem gluten"/> 
+                    <img  src={Gluten} alt="pizza sem glutem" />
                     </div>
                     </div>
                 </div>

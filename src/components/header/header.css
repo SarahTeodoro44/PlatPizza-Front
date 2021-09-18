@@ -4,7 +4,9 @@
 } /*aaaaaa*/
 
 .fixed {
-    position: fixed;
+    display: flex;
+    position: absolute;
+    right: 75%;
 }
 
 .icons-nav {
@@ -13,4 +15,10 @@
 
 .border-bottom-white {
     border-bottom: 4px solid white;
+}
+
+.main-logo{
+    display: flex;
+    position: absolute;
+    right: 75%;
 }
