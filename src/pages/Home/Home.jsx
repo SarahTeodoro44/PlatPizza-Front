@@ -1,6 +1,10 @@
+import SearchField from "react-search-field";
 import { Header } from "../../components/header/header";
 import { Footer } from "../../components/footer/footer";
 import Slide1 from '../../assets/images/banner_foto.png';
+import vegan from '../../assets/images/vegana.jpg';
+import glutem from '../../assets/images/sem-glutem.jpg';
+import lactose from '../../assets/images/lactose.jpg';
 import './Home.css';
 
 export function Home() {
@@ -37,7 +41,25 @@ export function Home() {
                         </button>
                     </div>
                 </section>
-
+            <div class="container"> <br></br> <br></br> <br></br>
+                <div class="row">
+                    <div class="col-md-4">
+                    <div class="gallery-box">
+                    <img  src={vegan} alt="imagem 1"/>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="gallery-box">
+                    <img  src={lactose} alt="imagem 2" />
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="gallery-box">
+                    <img  src={glutem} alt="imagem 3" />
+                    </div>
+                    </div>
+                </div>
+            </div>
                 <Footer />
             </div>
         </div>

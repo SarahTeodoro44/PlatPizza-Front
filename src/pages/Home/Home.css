@@ -18,3 +18,17 @@
     object-fit: cover;
     height: 100%;
 }
+
+  .gallery-box img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .gallery-box img:hover {
+    transform: scale(1.1);
+  }
+  .gallery-box {
+    position: relative;
+    margin-bottom: 30px;
+  }
