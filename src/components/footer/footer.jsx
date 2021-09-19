@@ -20,15 +20,15 @@ export function Footer() {
                             <div class="icons-nav"><img width="135" src={Entrega }/></div>
                             <p>Fique tranquilo no conforto de sua casa, que nós entregamos</p>
                         </div>
-                        <div class="col-6">
-                            <div class="social-text">
-                                <p>Nossas Redes Sociais</p>
-                            </div>
+                        <div class="col">
                             <div class="social-midias">
-                                <div class="icons-nav"><img width="100" src={Whatsapp }/></div>
-                                <div class="icons-nav"><img width="100" src={Twitter }/></div>
-                                <div class="icons-nav"><img width="100" src={Facebook }/></div>
-                                <div class="icons-nav"><img width="100" src={Instagram }/></div> 
+                                    <div class="social-text">
+                                        <p>Nossas Redes Sociais</p>
+                                     </div>
+                                <div class="icons-nav"><a class="" href=""><img width="100" src={Whatsapp }/></a></div>
+                                <div class="icons-nav"><a class="" href=""><img width="100" src={Twitter }/></a></div>
+                                <div class="icons-nav"><a class="" href=""><img width="100" src={Facebook }/></a></div>
+                                <div class="icons-nav"><a class="" href=""><img width="100" src={Instagram }/></a></div> 
                             </div>
                         </div>
                     </div>
