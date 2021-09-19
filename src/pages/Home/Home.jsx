@@ -48,7 +48,7 @@ export function Home() {
             <div class="container"> <br></br> <br></br> <br></br> 
             <div>
             < SearchPage  />
-             <img class="search" src={Pesquisa} alt="icone pizza vegana"/> 
+            <a class="" href=""><img class="search" src={Pesquisa} alt="icone pizza vegana"/></a>
              </div>
              <br></br> <br></br> <br></br><br></br> <br></br> <br></br> <br></br> <br></br>
                 <div class="row">

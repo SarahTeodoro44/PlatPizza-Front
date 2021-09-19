@@ -5,7 +5,8 @@
 }
 
 body {
-    background: #171717;
+    background: url(../assets/images/Background.png) no-repeat ;
+    background-size: cover;
     font-family: 'Jost';
     color: #fff;
 }

@@ -25,10 +25,10 @@ export function Footer() {
                                 <p>Nossas Redes Sociais</p>
                             </div>
                             <div class="social-midias">
-                                <div class="icons-nav"><img width="135" src={Whatsapp }/></div>
-                                <div class="icons-nav"><img width="135" src={Twitter }/></div>
-                                <div class="icons-nav"><img width="135" src={Facebook }/></div>
-                                <div class="icons-nav"><img width="135" src={Instagram }/></div> 
+                                <div class="icons-nav"><img width="100" src={Whatsapp }/></div>
+                                <div class="icons-nav"><img width="100" src={Twitter }/></div>
+                                <div class="icons-nav"><img width="100" src={Facebook }/></div>
+                                <div class="icons-nav"><img width="100" src={Instagram }/></div> 
                             </div>
                         </div>
                     </div>
