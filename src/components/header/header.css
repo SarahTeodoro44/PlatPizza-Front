@@ -3,22 +3,44 @@
     justify-content: center;
 } /*aaaaaa*/
 
-.fixed {
-    display: flex;
+.logo-header {
     position: absolute;
-    right: 75%;
+    top: -6px;
+    z-index: 999;
+    width: 250px;
 }
+
+.logo-header:hover {
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.menu-icon-header:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
 
 .icons-nav {
     margin: 0 35px;
 }
 
+.center-content {
+    justify-content: center;
+}
+
 .border-bottom-white {
-    border-bottom: 4px solid white;
+    border-bottom: 2px solid white;
 }
 
 .main-logo{
     display: flex;
     position: absolute;
     right: 75%;
+}
+
+@media(max-width: 768px) {
+    .logo-header {
+        width: 110px;
+    }
 }

@@ -9,14 +9,31 @@ import Et from '../../assets/icons/LogoEt01.png';
 export function Header() {
     return (
         <header>
-            <div class="flex-container border-bottom-white">
-                <div class="main-logo"><img class="fixed" width="280" src={Et} alt="Logo" /></div>
-                <div class="icons-nav"><img width="135" src={Inicio} alt="Inicio" /></div>
-                <div class="icons-nav"><img width="135" src={Pesquisa} alt="Pesquisa" /></div>
-                <div class="icons-nav"><img width="135" src={Cardapio} alt="Cardapio" /></div>
-                <div class="icons-nav"><img width="135" src={Contato} alt="Contato" /></div>
-                <div class="icons-nav"><img width="135" src={User} alt="Contato" /></div>
+            <nav class="navbar navbar-expand-lg navbar-light border-bottom-white">
+            <a class="navbar-brand" href=""><img class="logo-header img-fluid" src={Et} alt="logo" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse center-content" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href=""><img class="menu-icon-header" width="120" src={Inicio} alt="Inicio" /></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><img class="menu-icon-header" width="120" src={Pesquisa} alt="Pesquisa" /></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><img class="menu-icon-header" width="120" src={Cardapio} alt="Cardapio" /></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><img class="menu-icon-header" width="120" src={Contato} alt="Contato" /></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><img class="menu-icon-header" width="120" src={User} alt="Contato" /></a>
+                    </li>
+                </ul>
             </div>
+            </nav>
         </header>
     )
 }
