@@ -1,4 +1,5 @@
 import './header.css';
+import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 import Inicio from '../../assets/icons/inicio.png';
 import Pesquisa from '../../assets/icons/pesquisa.png';
 import Cardapio from '../../assets/icons/cardapio.png';
@@ -29,7 +30,7 @@ export function Header() {
                         <a class="nav-link" href=""><img class="menu-icon-header" width="120" src={Contato} alt="Contato" /></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=""><img class="menu-icon-header" width="120" src={User} alt="Contato" /></a>
+                        <Link to="./login"><img class="menu-icon-header" width="120" src={User} alt="Contato" /></Link>
                     </li>
                 </ul>
             </div>
