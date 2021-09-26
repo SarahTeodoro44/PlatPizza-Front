@@ -4,7 +4,7 @@ import './Login.css';
 import BannerLogin from '../../assets/images/banner_login.png';
 import Et from '../../assets/icons/LogoEt01.png';
 import Facebook from '../../assets/icons/facebook.png';
-import Google from '../../assets/icons/google-icon.png';
+import Google from '../../assets/icons/google.png';
 
 export function Login() {
     return (
