@@ -1,10 +1,22 @@
 import React from "react";
+import { firebase } from "../../services/firebaseConfig";
 import { useHistory } from 'react-router-dom';
 import './Login.css';
 import BannerLogin from '../../assets/images/banner_login.png';
 import Et from '../../assets/icons/LogoEt01.png';
 import Facebook from '../../assets/icons/facebook.png';
 import Google from '../../assets/icons/google.png';
+
+const signInWithFirebase =()=>{
+    var google_provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(google_provider)
+    .then((re)=>{
+        console.log(re);
+    })
+    .catch((err)=>{
+        console.log(err);
+    })
+}
 
 export function Login() {
     return (
@@ -26,7 +38,7 @@ export function Login() {
                     <div class="icons"><a class="" href=""><img width="81" src={ Facebook }/></a></div>
                     </div>
                     <div class="icons-social2">
-                    <div class="icons"><a class="" href=""><img width="81" src={ Google}/></a></div>
+                    <div class="icons"><img width="81" src={ Google} onClick={signInWithFirebase}/></div>
                     </div>
                  </div>
              </div>
