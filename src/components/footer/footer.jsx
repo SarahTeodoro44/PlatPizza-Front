@@ -3,7 +3,7 @@ import App from '../../assets/icons/app.png';
 import Entrega from '../../assets/icons/entrega.png';
 import Whatsapp from '../../assets/icons/whatsapp.png';
 import Twitter from '../../assets/icons/twitter.png';
-import Facebook from '../../assets/icons/facebook.png';
+import Facebook from '../../assets/icons/facebook-icon.png';
 import Instagram from '../../assets/icons/instagram.png'
 
 export function Footer() {

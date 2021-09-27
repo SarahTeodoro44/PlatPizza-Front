@@ -7,9 +7,19 @@ import Et from '../../assets/icons/LogoEt01.png';
 import Facebook from '../../assets/icons/facebook.png';
 import Google from '../../assets/icons/google.png';
 
-const signInWithFirebase =()=>{
+const signInWithFirebaseGoogle =()=>{
     var google_provider = new firebase.auth.GoogleAuthProvider();
     firebase.auth().signInWithPopup(google_provider)
+    .then((re)=>{
+        console.log(re);
+    })
+    .catch((err)=>{
+        console.log(err);
+    })
+}
+const signInWithFirebaseFb =()=>{
+    var facebook_provider = new firebase.auth.FacebookAuthProvider();
+    firebase.auth().signInWithPopup(facebook_provider)
     .then((re)=>{
         console.log(re);
     })
@@ -35,10 +45,10 @@ export function Login() {
                     <hr class="hr-4"></hr>
                     <div class="or"><p>OU</p></div>
                     <div class="icons-social">
-                    <div class="icons"><a class="" href=""><img width="81" src={ Facebook }/></a></div>
+                    <div class="icons"><img width="81" src={ Facebook } onClick={signInWithFirebaseFb}/></div>
                     </div>
                     <div class="icons-social2">
-                    <div class="icons"><img width="81" src={ Google} onClick={signInWithFirebase}/></div>
+                    <div class="icons"><img width="81" src={ Google} onClick={signInWithFirebaseGoogle}/></div>
                     </div>
                  </div>
              </div>

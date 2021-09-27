@@ -19,19 +19,19 @@
 }
 
 .form-control-cpf{
-    position: fixed;
+    position: absolute;
     width: 476.74px;
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;  
     margin-top: 60px; 
-    left: 730.36px;
+    left: 50px;
     font-family: Poppins;
     font-style: normal;
 }
 
 .form-control-senha{
-    position: fixed;
+    position: absolute;
     width:476.74px;
     font-weight: 600;
     font-size: 18px;
@@ -40,8 +40,7 @@
     font-weight: 600;
     font-size: 18px;
     margin-top: 120px;   
-    left: 730.36px; 
-
+    left: 50px;
 }
 
 .btn{
@@ -60,30 +59,30 @@
 }
 
 .hr-2{
-    position: fixed;
+    position: absolute;
     width: 476.74px;
     height: 0px;
-    left: 730.36px;
     border: 5px solid #CFCFCF;
     margin-top: 250px;
+    left: 50px;
 }
 
 .hr-3{
-    position: fixed;
+    position: absolute;
     width: 202.05px;
     height: 0px;
-    left: 730.36px;
     border: 5px solid #CFCFCF;
     margin-top: 90px;
+    left: 350px;
 }
 
 .hr-4{
-    position: fixed;
+    position: absolute;
     width: 202.05px;
     height: 0px;
-    right: 730.36px;
     border: 5px solid #CFCFCF;
     margin-top: 90px;
+    left: 50px;
 }
 
 .et{
@@ -95,6 +94,7 @@
     top: 190px;
 }
 input {
+    position: absolute;
     background: transparent;
     border: 7px solid #CFCFCF;
     outline: none;
@@ -108,14 +108,14 @@ input {
     display: flex;
     position: absolute;
     left: 100px;
-    margin-top: 100px;
+    margin-top: 120px;
 
 }
 .icons-social2{
     display: flex;
     position: absolute;
-    margin-top: 100px;
-    left: 390px;
+    margin-top: 120px;
+    left: 400px;
 }
 
 .new-account{
