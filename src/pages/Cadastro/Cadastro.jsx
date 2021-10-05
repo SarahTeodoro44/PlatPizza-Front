@@ -19,7 +19,7 @@ export function Cadastro() {
                         <input type="password" class="form-senha" placeholder="Senha"/>
                         <input type="password" class="form-confirma-senha" placeholder="Confirmação Senha"/>
                         <button class="btn">Finalizar</button>
-                        <a class="voltar" href="#"><p>Voltar</p></a>
+                        <a class="voltar" href="#"><p> &lt;Voltar</p></a>
                     </div>
                 </div> 
             </div>
