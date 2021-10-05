@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
 
 .banner-login{
     position: absolute;
@@ -10,14 +11,32 @@
 
 .cadastro-area{
     position: absolute;
-    width: 607.88px;
-    height: 461.45px;
+    width: 575px;
+    height: 430px;
     left: 672px;
     top: 406.55px;
     background: #E8E8E8;
     border: 1px solid #E2D9D7;
     box-sizing: border-box;
     border-radius: 16px;
+}
+
+.cadastro-area2 {
+    margin-top: -65px;
+}
+
+.info {
+    margin-bottom: 10px;
+}
+
+.info > p {
+    text-align: center;
+    color: #9C98A6;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Poppins;
+    font-style: normal;
+    margin-top: -20px;
 }
 
 .form-email{
@@ -41,7 +60,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    margin-top: 120px;   
+    margin-top: 110px;   
     left: 50px;
 }
 
@@ -54,7 +73,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    margin-top: 170px;   
+    margin-top: 160px;   
     left: 50px;
 }
 
@@ -65,13 +84,23 @@
     width: 215px;
     height: 46px;
     left: 190px;
-    margin-top: 250px;
+    margin-top: 230px;
     background: #00C157;
     font-family: Archivo;
     font-style: normal;
     color: rgb(255, 255, 255);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
+}
+
+.voltar > p {
+    text-align: center;
+    color: #9C98A6;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Poppins;
+    font-style: normal;
+    margin-top: 10px;
 }
 
 .et{
