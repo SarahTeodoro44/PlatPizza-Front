@@ -1,7 +1,7 @@
 import { Header } from "../../components/header/header";
 import { Footer } from "../../components/footer/footer";
 import SearchPage  from '../../components/SearchPage';
-import Slide1 from '../../assets/images/banner_foto.png';
+import Banner from '../../assets/images/banner.jpeg';
 import Vegan from '../../assets/images/vegana.jpg';
 import Gluten from '../../assets/images/sem-glutem.jpg';
 import Lactose from '../../assets/images/lactose.jpg';
@@ -26,13 +26,13 @@ export function Home() {
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src={Slide1} class="d-block w-100" alt="Slide 1" />
+                                <img src={Banner} class="d-block w-100" alt="Slide 1" />
                             </div>
                             <div class="carousel-item">
-                                <img src={Slide1} class="d-block w-100" alt="Slide 2" />
+                                <img src={Banner} class="d-block w-100" alt="Slide 2" />
                             </div>
                             <div class="carousel-item">
-                                <img src={Slide1} class="d-block w-100" alt="Slide 3" />
+                                <img src={Banner} class="d-block w-100" alt="Slide 3" />
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

@@ -30,7 +30,7 @@ const signInWithFirebaseFb =()=>{
 
 export function Login() {
     return (
-        <main class="login">
+        <div class="container">
             <div>
              <img class="et" src={Et} alt="logo" />
             <img class="banner-login"  src={ BannerLogin} alt="banner"/> 
@@ -38,7 +38,7 @@ export function Login() {
                  <input type="text" class="form-control-cpf" placeholder="CPF"/>
                     <input type="password" class="form-control-senha" placeholder="Senha" />
                     <hr class="hr-2"></hr>
-                    <button class ="btn">Entrar</button>  
+                    <button class ="btn-login">Entrar</button>  
                     <div class="new-account"><p>Crie sua conta</p></div>
                     <hr class="hr-3"></hr>
                     <div class="forgot-password"><p>Esqueceu sua senha ?</p></div>
@@ -52,7 +52,7 @@ export function Login() {
                     </div>
                  </div>
              </div>
-             </main>
+             </div>
     )
 
    

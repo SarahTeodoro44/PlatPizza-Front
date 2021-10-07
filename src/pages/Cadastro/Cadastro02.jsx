@@ -5,7 +5,7 @@ import BannerLogin from '../../assets/images/banner_login.png';
 import Et from '../../assets/icons/LogoEt01.png';
 
 
-export function Cadastro() {
+export function Cadastro02() {
     return (
         <main class="cadastro">
             <div>
@@ -13,17 +13,14 @@ export function Cadastro() {
                 <img class="banner-login"  src={ BannerLogin} alt="banner"/>
                 <div class="cadastro-area">
                     <div class="info">
-                        <p>Digite seus Dados:</p>
+                        <h1>Cadastro Concluído com sucesso, seja bem vindo !</h1>
                     </div>
                     <div class="cadastro-area2">
-                        <input type="text" class="form-email" placeholder="Nome Completo"/>
-                        <input type="text" class="form-cpf" placeholder="CPF"/>
-                        <input type="text" class="form-celular" placeholder="Celular"/>
-                        <Link to="./cadastro01"><button class="btn">Avançar</button></Link>
+                        <h2>Clique aqui para continuar</h2>
+                        <Link to="./login"><button class="btn-2">Entrar</button></Link>
                     </div>
                 </div> 
             </div>
         </main>
     )
 }
-
