@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+
+
+
+.frase {
+    align-items: center;
+    font-weight: 600;
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 36px;
+    text-align: center;
+}
+
+p {
+    margin-top: 530px;
+}
