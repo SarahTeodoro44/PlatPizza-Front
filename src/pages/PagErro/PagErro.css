@@ -3,6 +3,41 @@
 
 
 
+/* Flex Container */
+.container {
+	max-width: 420px;
+	margin: 100px;
+	display: inline-flex;
+	border: 1px solid #ccc;
+}
+
+.center {
+	align-items: center;
+}
+
+/* Flex Item */
+.item-v {
+    color: #F20F0F;
+    font-family: Rajdhani;
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	text-align: center;
+	font-size: 96px;
+}
+
+
+
+.item {
+    font-family: Rajdhani;
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	text-align: center;
+	font-size: 96px;
+}
+
+
 .frase {
     align-items: center;
     font-weight: 600;
@@ -13,5 +48,5 @@
 }
 
 p {
-    margin-top: 530px;
+    margin-top: 200px;
 }
