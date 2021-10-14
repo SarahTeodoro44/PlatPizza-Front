@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+
+
+
+/* Flex Container */
+.container {
+	max-width: 420px;
+	margin: 100px;
+	display: inline-flex;
+	border: 1px solid #ccc;
+}
+
+.center {
+	align-items: center;
+}
+
+/* Flex Item */
+.item-v {
+    color: #F20F0F;
+    font-family: Rajdhani;
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	text-align: center;
+	font-size: 96px;
+}
+
+
+
+.item {
+    font-family: Rajdhani;
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	text-align: center;
+	font-size: 96px;
+}
+
+
+.frase {
+    align-items: center;
+    font-weight: 600;
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 36px;
+    text-align: center;
+}
+
+p {
+    margin-top: 200px;
+}

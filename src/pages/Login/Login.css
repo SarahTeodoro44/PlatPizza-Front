@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.banner-login{
+    position: absolute;
+    width:575px;
+    height: 786px;
+    left: 143px;
+    top: 129px;
+}
+
+.login-area{
+    position: absolute;
+    width: 607.88px;
+    height: 461.45px;
+    left: 672px;
+    top: 406.55px;
+    background: #E8E8E8;
+    border: 1px solid #E2D9D7;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.form-control-cpf{
+    position: absolute;
+    width: 476.74px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;  
+    margin-top: 60px; 
+    left: 50px;
+    font-family: Poppins;
+    font-style: normal;
+}
+
+.form-control-senha{
+    position: absolute;
+    width:476.74px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 120px;   
+    left: 50px;
+}
+
+.btn-login{
+    position: relative;
+    justify-items: center;
+    width: 215px;
+    height: 46px;
+    left: 190px;
+    margin-top: 170px;
+    background: #FE4347;
+    font-family: Archivo;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 8px;
+}
+
+.hr-2{
+    position: absolute;
+    width: 476.74px;
+    height: 0px;
+    border: 5px solid #CFCFCF;
+    margin-top: 250px;
+    left: 50px;
+}
+
+.hr-3{
+    position: absolute;
+    width: 202.05px;
+    height: 0px;
+    border: 5px solid #CFCFCF;
+    margin-top: 90px;
+    left: 350px;
+}
+
+.hr-4{
+    position: absolute;
+    width: 202.05px;
+    height: 0px;
+    border: 5px solid #CFCFCF;
+    margin-top: 90px;
+    left: 50px;
+}
+
+.et{
+    position: absolute;
+    z-index: 999;
+    width: 358.1px;
+    height: 315.42px;
+    left: 797.11px;
+    top: 190px;
+}
+input {
+    position: absolute;
+    background: transparent;
+    border: 7px solid #CFCFCF;
+    outline: none;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    background-color: transparent;
+}
+
+.icons-social{
+    display: flex;
+    position: absolute;
+    left: 100px;
+    margin-top: 120px;
+
+}
+.icons-social2{
+    display: flex;
+    position: absolute;
+    margin-top: 120px;
+    left: 400px;
+}
+
+.new-account{
+    display: flex;
+    position: absolute;
+    left: 90px;
+    align-items: center;
+    text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    width: 200px;
+    margin-top: 60px;
+    color: #9C98A6;
+}
+
+.forgot-password{
+    display: flex;
+    position: absolute;
+    left: 360px;
+    align-items: center;
+    text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    width: 201px;
+    margin-top: 60px;
+    color: #9C98A6;
+}
+
+.or{
+    display: flex;
+    position: absolute;
+    width: 23.87px;
+    height: 18.55px;
+    left: 275px;
+    margin-top: 80px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #9C98A6;
+}
+
+@media(max-width: 768px) {
+    .login-area{
+        position: absolute;
+        width: 565px;
+        height: 561.45px;
+        margin-top: -210px;
+        left: 0%;
+        right: 0%;
+        background: #E8E8E8;
+        border: 1px solid #E2D9D7;
+        box-sizing: border-box;
+        border-radius: 16px;
+    }
+    .et{
+        position: absolute;
+        z-index: 999;
+        width: 358.1px;
+        height: 315.42px;
+        left: 125px;
+        top: 20px;
+    }
+    .banner-login{
+        position: absolute;
+        width:575px;
+        height: 786px;
+        left: 0%;
+        right: 0%;
+        top: 0px;
+    }
+    .form-control-cpf{
+        position: absolute;
+        width: 476.74px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;  
+        margin-top: 150px; 
+        left: 50px;
+        font-family: Poppins;
+        font-style: normal;
+    }
+    
+    .form-control-senha{
+        position: absolute;
+        width:476.74px;
+        font-weight: 600;
+        font-size: 18px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        margin-top: 230px;   
+        left: 50px;
+    }
+    .btn{
+        position: relative;
+        justify-items: center;
+        width: 215px;
+        height: 46px;
+        left: 190px;
+        margin-top: 290px;
+        background: #FE4347;
+        font-family: Archivo;
+        font-style: normal;
+        color: rgb(255, 255, 255);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+    }
+}

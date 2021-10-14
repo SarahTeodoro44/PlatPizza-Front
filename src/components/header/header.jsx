@@ -1,4 +1,7 @@
+import { useHistory } from 'react-router-dom';
+
 import './header.css';
+import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 import Inicio from '../../assets/icons/inicio.png';
 import Pesquisa from '../../assets/icons/pesquisa.png';
 import Cardapio from '../../assets/icons/cardapio.png';
@@ -7,6 +10,13 @@ import User from '../../assets/icons/user1.png';
 import Et from '../../assets/icons/LogoEt01.png';
 
 export function Header() {
+
+    const history = useHistory();
+
+    function navigateToContato(){
+        history.push('/contato')
+    }
+
     return (
         <header>
             <nav class="navbar navbar-expand-lg navbar-light border-bottom-white">
@@ -26,10 +36,10 @@ export function Header() {
                         <a class="nav-link" href=""><img class="menu-icon-header" width="120" src={Cardapio} alt="Cardapio" /></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=""><img class="menu-icon-header" width="120" src={Contato} alt="Contato" /></a>
+                        <a class="nav-link" onClick={navigateToContato}><img class="menu-icon-header" width="120" src={Contato} alt="Contato" /></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=""><img class="menu-icon-header" width="120" src={User} alt="Contato" /></a>
+                        <Link to="./login"><img class="menu-icon-header" width="120" src={User} alt="Contato" /></Link>
                     </li>
                 </ul>
             </div>

@@ -1,0 +1,58 @@
+.info{
+    margin-top: 80px;
+}
+
+.imgIconInfo{
+    margin-top: -12px;
+    width: 50px; 
+    height:50px;
+}
+
+.info p {
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+
+.forms-duvida input{
+    border-radius: 8px;
+    padding: 7px;
+}
+
+
+.txtArea{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    padding: 7px;
+}
+
+.mb-12{
+    margin-bottom: 12px
+}
+
+.forms-duvida button{
+    margin-top: 25px;
+    padding: 15px 100px;
+    background: #00C157;
+    color: #fff;
+    border-radius: 12px;
+
+}
+
+.forms-duvida h1{
+    font-size:26px;
+    margin: 10px 0;
+}
+
+@media(max-width: 768px) {
+    .forms-duvida h1{
+        font-size: 20px;
+    }
+    .forms-duvida input{
+        margin-bottom: 12px;
+    }
+    .mx-auto{
+        margin-left: 100px;
+    }
+}
