@@ -96,7 +96,8 @@
     left: 797.11px;
     top: 190px;
 }
-input {
+
+.edit-inp  {
     position: absolute;
     background: transparent;
     border: 7px solid #CFCFCF;

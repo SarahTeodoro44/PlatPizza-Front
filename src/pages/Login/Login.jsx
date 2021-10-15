@@ -35,8 +35,8 @@ export function Login() {
              <img class="et" src={Et} alt="logo" />
             <img class="banner-login"  src={ BannerLogin} alt="banner"/> 
                 <div class="login-area">
-                 <input type="text" class="form-control-cpf" placeholder="CPF"/>
-                    <input type="password" class="form-control-senha" placeholder="Senha" />
+                 <input type="text" class="form-control-cpf edit-inp" placeholder="CPF"/>
+                    <input type="password" class="form-control-senha edit-inp" placeholder="Senha" />
                     <hr class="hr-2"></hr>
                     <button class ="btn-login">Entrar</button>  
                     <div class="new-account"><p>Crie sua conta</p></div>

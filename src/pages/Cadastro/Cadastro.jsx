@@ -13,12 +13,12 @@ export function Cadastro() {
                 <img class="banner-login"  src={ BannerLogin} alt="banner"/>
                 <div class="cadastro-area">
                     <div class="info">
-                        <p>Digite seus Dados:</p>
+                        <p class="digt">Digite seus Dados:</p>
                     </div>
                     <div class="cadastro-area2">
-                        <input type="text" class="form-email" placeholder="Nome Completo"/>
-                        <input type="text" class="form-cpf" placeholder="CPF"/>
-                        <input type="text" class="form-celular" placeholder="Celular"/>
+                        <input type="text" class="form-email edit-inp" placeholder="Nome Completo"/>
+                        <input type="text" class="form-cpf edit-inp" placeholder="CPF"/>
+                        <input type="text" class="form-celular edit-inp" placeholder="Celular"/>
                         <Link to="./cadastro01"><button class="btn">Avançar</button></Link>
                     </div>
                 </div> 

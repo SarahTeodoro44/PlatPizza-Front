@@ -16,9 +16,9 @@ export function Cadastro01() {
                         <p>Digite seus Dados:</p>
                     </div>
                     <div class="cadastro-area2">
-                        <input type="email" class="form-email" placeholder="Email"/>
-                        <input type="password" class="form-senha" placeholder="Senha"/>
-                        <input type="password" class="form-confirma-senha" placeholder="Confirmação Senha"/>
+                        <input type="email" class="form-email edit-inp" placeholder="Email"/>
+                        <input type="password" class="form-senha edit-inp" placeholder="Senha"/>
+                        <input type="password" class="form-confirma-senha edit-inp" placeholder="Confirmação Senha"/>
                         <Link to="./cadastro02"><button class="btn">Finalizar</button></Link>
                         <Link to="./cadastro"><a class="voltar"><p> &lt;Voltar</p></a></Link>
                     </div>
