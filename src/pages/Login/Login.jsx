@@ -1,5 +1,6 @@
 import React from "react";
 import { firebase } from "../../services/firebaseConfig";
+import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 import { useHistory } from 'react-router-dom';
 import './Login.css';
 import BannerLogin from '../../assets/images/banner_login.png';
@@ -39,7 +40,7 @@ export function Login() {
                     <input type="password" class="form-control-senha edit-inp" placeholder="Senha" />
                     <hr class="hr-2"></hr>
                     <button class ="btn-login">Entrar</button>  
-                    <div class="new-account"><p>Crie sua conta</p></div>
+                    <Link to="../cadastro"><div class="new-account"><p>Crie sua conta</p></div></Link>
                     <hr class="hr-3"></hr>
                     <div class="forgot-password"><p>Esqueceu sua senha ?</p></div>
                     <hr class="hr-4"></hr>
