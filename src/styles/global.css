@@ -8,6 +8,7 @@ body {
     background: url(../assets/images/Background.png) no-repeat ;
     font-family: 'Jost';
     color: #fff;
+    overflow-x: hidden;
 }
 
 h1 {
