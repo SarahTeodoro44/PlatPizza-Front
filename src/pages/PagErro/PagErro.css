@@ -4,16 +4,14 @@
 
 
 /* Flex Container */
-.container {
+.conteudo {
 	max-width: 420px;
 	margin: 300px auto;
 	display: flex;
-}
-
-.center {
 	align-items: center;
 	justify-content: center;
 }
+
 
 /* Flex Item */
 .item-v {
