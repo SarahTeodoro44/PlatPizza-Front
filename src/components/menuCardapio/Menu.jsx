@@ -9,10 +9,10 @@ import { Button } from './Button';
 
 export function Menu() {
 
-    const allCategories = ['All', new Set(items.map(item => item.category))];
+    const allCategories = ['All', ...new Set(items.map(item => item.category))];
 
     const [menuItem, setMenuItem] = useState(items)
-    const [buttons, setButtons] = useState([allCategories])
+    const [buttons, setButtons] = useState(allCategories)
 
     console.log(buttons)
 
@@ -31,9 +31,7 @@ export function Menu() {
     return (
         <div className="container">
 
-
             <Button button={buttons} filter={filter} />
-
 
             <br></br> <br></br> <br></br>
             <div className="item">
