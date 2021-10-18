@@ -27,13 +27,13 @@ export function Header() {
             <div class="collapse navbar-collapse center-content" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href=""><img class="menu-icon-header" width="120" src={Inicio} alt="Inicio" /></a>
+                        <Link to="/home"><img class="menu-icon-header" width="120" src={Inicio} alt="Inicio" /></Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=""><img class="menu-icon-header" width="120" src={Pesquisa} alt="Pesquisa" /></a>
+                    <Link to="/home"><img class="menu-icon-header" width="120" src={Pesquisa} alt="Pesquisa" /></Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=""><img class="menu-icon-header" width="120" src={Cardapio} alt="Cardapio" /></a>
+                    <Link to="./cardapio"><img class="menu-icon-header" width="120" src={Cardapio} alt="Cardapio" /></Link>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" onClick={navigateToContato}><img class="menu-icon-header" width="120" src={Contato} alt="Contato" /></a>

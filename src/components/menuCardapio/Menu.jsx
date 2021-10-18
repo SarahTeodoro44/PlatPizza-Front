@@ -9,7 +9,7 @@ import { Button } from './Button';
 
 export function Menu() {
 
-    const allCategories = ['All', ...new Set(items.map(item => item.category))];
+    const allCategories = ['Todas', ...new Set(items.map(item => item.category))];
 
     const [menuItem, setMenuItem] = useState(items)
     const [buttons, setButtons] = useState(allCategories)
@@ -18,7 +18,7 @@ export function Menu() {
 
     const filter = (button) => {
 
-        if (button === 'All') {
+        if (button === 'Todas') {
             setMenuItem(items);
             return;
         }

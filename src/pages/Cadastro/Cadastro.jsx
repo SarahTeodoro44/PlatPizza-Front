@@ -8,22 +8,22 @@ import Et from '../../assets/icons/LogoEt01.png';
 export function Cadastro() {
     return (
         <main class="cadastro">
-            <div>
-                <img class="et" src={Et} alt="logo" />
-                <img class="banner-login"  src={ BannerLogin} alt="banner"/>
-                <div class="cadastro-area">
-                    <div class="info">
-                        <p class="digt">Digite seus Dados:</p>
-                    </div>
-                    <div class="cadastro-area2">
-                        <input type="text" class="form-email edit-inp" placeholder="Nome Completo"/>
-                        <input type="text" class="form-cpf edit-inp" placeholder="CPF"/>
-                        <input type="text" class="form-celular edit-inp" placeholder="Celular"/>
-                        <Link to="./cadastro01"><button class="btn">Avançar</button></Link>
-                    </div>
-                </div> 
-            </div>
-        </main>
+        <div>
+            <img class="et" src={Et} alt="logo" />
+            <img class="banner-login"  src={ BannerLogin} alt="banner"/>
+            <div class="cadastro-area">
+                <div class="info">
+                    <p class="digt">Digite seus Dados:</p>
+                </div>
+                <div class="cadastro-area2">
+                    <input type="text" class="form-email edit-inp" placeholder="Nome Completo"/>
+                    <input type="text" class="form-cpf edit-inp" placeholder="CPF"/>
+                    <input type="text" class="form-celular edit-inp" placeholder="Celular"/>
+                    <Link to="./cadastro01"><button class="btn">Avançar</button></Link>
+                </div>
+            </div> 
+        </div>
+    </main>
     )
 }
 

@@ -15,7 +15,7 @@ export default [
     {
         id: 1,
         image: pizza1,
-        category: 'Salgado',
+        category: 'Salgada',
         title: 'Frango com Catupiry',
         imgIcon: veganaIcon
     },
@@ -23,7 +23,7 @@ export default [
     {
         id: 2,
         image: pizza2,
-        category: 'Salgado',
+        category: 'Salgada',
         title: 'Calabresa',
         imgIcon: semGluten
     },
@@ -47,7 +47,7 @@ export default [
     {
         id: 5,
         image: pizza5,
-        category: 'Salgado',
+        category: 'Salgada',
         title: 'Carne com Pimentões',
         imgIcon: semGluten
     },
@@ -55,7 +55,7 @@ export default [
     {
         id: 6,
         image: pizza6,
-        category: 'Salgado',
+        category: 'Salgada',
         title: 'Saúdavel com Peperoni',
         imgIcon: semLactose
     },
@@ -71,7 +71,7 @@ export default [
     {
         id: 8,
         image: pizza8,
-        category: 'Salgado',
+        category: 'Salgada',
         title: 'Peperoni',
         imgIcon: semLactose
     },

@@ -122,18 +122,24 @@
     z-index: 1000;
 }
 button, select {
+    text-align: center;
+    float: left;
+    position: relative;
+    margin: 5px;
+    margin-top: 5px;
     font-family: Poppins;
+    font-size: 16px;
     font-style: normal;
     text-transform: none;
-    border: none;
-    margin-top: 60px;
+    border: hidden;
+    border-radius: 10px;
     color:#d7dce1;
-    background-color: #ff5757;
+    width:200px;
+    height: 40px;
+    background: url("../../assets/images/Faixa-Vermelha.png") ;
 }
-.buttons{
-    width: 70%;
-    margin: 3rem auto;
-    text-align: center;
+.button-categoria{
+    margin-top: 80px;
 }
 /*.item-container > img:hover{
     transform: scale(0.9);
