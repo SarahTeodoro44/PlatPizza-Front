@@ -1,11 +1,10 @@
 
 import items from '../../pages/Cardapio/allData';
 import VeganIcon from '../../assets/icons/vegana.png';
+import LupaPesquisar from '../../assets/icons/lupa-de-detetive.png'
 import { useState } from 'react';
 import './Menu.css';
 import { Button } from './Button';
-
-
 
 export function Menu() {
 
@@ -46,6 +45,10 @@ export function Menu() {
                                                 <img src={item.image} className="img" alt="" />
                                                 <div className="pizza-info">
                                                     <h2>{item.title}</h2>
+                                                    <div className="pizza-pesquisar">
+                                                        <img src={LupaPesquisar} alt="LupaPesquisar" />
+                                                        <a href="#">Ver mais</a>
+                                                    </div>
                                                 </div>
                                             </div>
 

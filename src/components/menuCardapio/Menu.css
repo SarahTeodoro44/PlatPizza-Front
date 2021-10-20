@@ -60,6 +60,27 @@
     right: 15px;
 }
 
+.pizza-pesquisar{
+    display: flex;
+    flex-direction: column;
+}
+
+.pizza-pesquisar img{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 5px;
+}
+
+.pizza-pesquisar a{
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.pizza-pesquisar a:hover{
+    color: #ff5757;
+}
 
 .pizza-info{
     opacity: 0;
@@ -141,3 +162,9 @@ button, select {
 .button-categoria{
     margin-top: 80px;
 }
+.item-container > img:hover{
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+
