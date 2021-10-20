@@ -142,7 +142,7 @@
     height: 220px;
     z-index: 1000;
 }
-button, select {
+.button-menu {
     text-align: center;
     position: relative;
     margin: 5px;
@@ -154,9 +154,9 @@ button, select {
     border: hidden;
     border-radius: 10px;
     color:#d7dce1;
-    width:100%;
+    width:200px;
     height: 40px;
-    background: #ff5757;
+    background: url("../../assets/images/Faixa-Vermelha.png");
 }
 
 .button-categoria{

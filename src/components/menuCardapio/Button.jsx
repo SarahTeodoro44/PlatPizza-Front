@@ -1,5 +1,5 @@
 import './Menu.css';
-
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import items from '../../pages/Cardapio/allData';
 
 export function Button({ button, filter }) {
@@ -8,9 +8,9 @@ export function Button({ button, filter }) {
             {
                 button.map((cat, i) => {
                     return (
-                        <div>
-                            <button type="button" onClick={() => filter(cat)}>{cat}</button>
-                        </div>
+                        <ButtonGroup aria-label="Basic example">
+                            <button type="button" className="button-menu" onClick={() => filter(cat)}>{cat}</button>
+                            </ButtonGroup>
 
                     )
                 })
