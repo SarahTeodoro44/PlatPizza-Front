@@ -3,12 +3,12 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAr5AByIzzx6lzKJKyJIR3WM46B4TmmP3s",
-  authDomain: "platpizza-c768b.firebaseapp.com",
-  projectId: "platpizza-c768b",
-  storageBucket: "platpizza-c768b.appspot.com",
-  messagingSenderId: "180836310044",
-  appId: "1:180836310044:web:acc47f341b06b8710193d9"
+  apiKey: "AIzaSyDUMEY33hvqqqNy6eynn-P94YD3YJXI3ic",
+  authDomain: "platpizza-3b5ad.firebaseapp.com",
+  projectId: "platpizza-3b5ad",
+  storageBucket: "platpizza-3b5ad.appspot.com",
+  messagingSenderId:"924217850389",
+  appId: "1:924217850389:web:f12b191b13b77092d82c1c"
 };
 
 firebase.initializeApp(firebaseConfig);
