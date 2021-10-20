@@ -20,18 +20,19 @@
 	margin: 5px;
 	padding: 0 10px;
 	text-align: center;
-	font-size: 96px;
+	font-size: 200px;
 }
 
 
 
 .item {
+	color: #ffffff;
     font-family: Rajdhani;
 	flex: 1;
 	margin: 5px;
 	padding: 0 10px;
 	text-align: center;
-	font-size: 96px;
+	font-size: 200px;
 }
 
 
@@ -47,10 +48,11 @@
 	font-weight: 600;
     font-family: Poppins;
     font-style: normal;
-    font-size: 36px;
+    font-size: 40px;
 	background: -webkit-linear-gradient(left, #F20F0F 49%, #2dac2a 50%, #ffffff 60%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
     text-align: center;
+	letter-spacing: 10px;
 }
 
