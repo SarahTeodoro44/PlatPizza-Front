@@ -1,6 +1,6 @@
-import { React, useState } from "react";
+import { React } from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-import { ToastContainer, toast, Zoom, Bounce } from "react-toastify";
+
 
 import { firebase } from "../../services/firebaseConfig";
 import { api } from "../../services/api";
@@ -10,8 +10,10 @@ import Et from '../../assets/icons/LogoEt01.png';
 import Facebook from '../../assets/icons/facebook.png';
 import Google from '../../assets/icons/google.png';
 
-import 'react-toastify/dist/ReactToastify.css'
+
 import './Login.css';
+
+import { useAuth } from '../../hooks/useAuth'
 
 const signInWithFirebaseGoogle = () => {
     var google_provider = new firebase.auth.GoogleAuthProvider();
@@ -36,34 +38,7 @@ const signInWithFirebaseFb = () => {
 
 export function Login() {
 
-
-
-    const [userCpfLogin, setUserCpfLogin] = useState();
-    const [userSenhaLogin, setUserSenhaLogin] = useState();
-
-
-    function handleSignIn(event) {
-        event.preventDefault();
-
-        const data = {
-            userCpfLogin,
-            userSenhaLogin,
-        }
-
-        api.post('/cliente/login', data)
-            .then(response => {
-                if (response.status == 200) {
-                    console.log('Login realizado com sucesso!')
-                }
-            })
-            .catch((err) => {
-                if (err) {
-                    toast.error("Erro")
-                }
-            })
-
-        console.log('alou')
-    }
+    const user = useAuth();
 
     return (
         <div class="container">
@@ -71,21 +46,21 @@ export function Login() {
                 <img class="et" src={Et} alt="logo" />
                 <img class="banner-login" src={BannerLogin} alt="banner" />
                 <div class="login-area">
-                    <form onSubmit={handleSignIn}>
+                    <form onSubmit={user.handleSignIn}>
                         <input
                             type="text"
                             class="form-control-cpf edit-inp"
                             placeholder="CPF"
-                            value={userCpfLogin}
-                            onChange={event => setUserCpfLogin(event.target.value)}
+                            value={user.userCpfLogin}
+                            onChange={event => user.setUserCpfLogin(event.target.value)}
                         />
 
                         <input
                             type="password"
                             class="form-control-senha edit-inp"
                             placeholder="Senha"
-                            value={userSenhaLogin}
-                            onChange={event => setUserSenhaLogin(event.target.value)}
+                            value={user.userSenhaLogin}
+                            onChange={event => user.setUserSenhaLogin(event.target.value)}
                         />
                         <hr class="hr-2"></hr>
                         <button

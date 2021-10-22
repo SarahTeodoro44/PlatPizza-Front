@@ -13,11 +13,12 @@ import { MultiStepForm } from './pages/Cadastro/MultiStepForm'
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
 
+import { AuthContextProvider } from './contexts/AuthContext'
 
 function App() {
 
   return (
-    <>
+    <AuthContextProvider>
       <ToastContainer />
       <Router>
         <Switch>
@@ -31,7 +32,7 @@ function App() {
           <Route exact path="/cardapio" component={Cardapio} />
         </Switch>
       </Router>
-    </>
+    </AuthContextProvider>
   );
 }
 
