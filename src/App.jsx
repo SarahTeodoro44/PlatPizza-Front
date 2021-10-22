@@ -10,10 +10,15 @@ import { PagErro } from "./pages/PagErro/PagErro";
 import { Cardapio } from "./pages/Cardapio/Cardapio"
 import { MultiStepForm } from './pages/Cadastro/MultiStepForm'
 
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'
+
 
 function App() {
+
   return (
     <>
+      <ToastContainer />
       <Router>
         <Switch>
           <Route exact path="/home" component={Home} />
