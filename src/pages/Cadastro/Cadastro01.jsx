@@ -3,20 +3,39 @@ import { BrowserRouter as Link } from "react-router-dom";
 import './Cadastro.css';
 import BannerLogin from '../../assets/images/banner_login.png';
 import Et from '../../assets/icons/LogoEt01.png';
+import { api } from '../../services/api';
+
+
+import { ToastContainer, toast, Zoom, Bounce } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'
 
 export function Cadastro01({ formData, setForm, navigation, }) {
 
-    const { email, senha, repetirSenha } = formData;
+    const { emailVM, senhaVM, repetirSenha } = formData;
 
     function handleNewCadastro(event) {
         event.preventDefault();
 
-        const goNext = () => {
-            navigation.next();
-        }
-        console.log(formData)
+        const goNext = () => navigation.next();
 
-        return goNext();
+        api.post('/cliente/cadastro', formData)
+            .then(response => {
+                if (response.status == 201) {
+                    goNext();
+                }
+            })
+            .catch((error) => {
+                if (error.response) {
+                    toast.error("Erro")
+                    console.log(error.toJSON());
+                } else if (error.request) {
+                    toast.error("Erro")
+                    console.log(error.toJSON());
+                } else {
+                    toast.error("Erro")
+                    console.log(error.toJSON());
+                }
+            })
     }
 
     return (
@@ -34,16 +53,16 @@ export function Cadastro01({ formData, setForm, navigation, }) {
                                 type="email"
                                 className="form-email edit-inp"
                                 placeholder="Email"
-                                name="email"
-                                value={email}
+                                name="emailVM"
+                                value={emailVM}
                                 onChange={setForm}
                             />
                             <input
                                 type="password"
                                 className="form-senha edit-inp"
                                 placeholder="Senha"
-                                name="senha"
-                                value={senha}
+                                name="senhaVM"
+                                value={senhaVM}
                                 onChange={setForm}
                             />
                             <input
@@ -68,6 +87,7 @@ export function Cadastro01({ formData, setForm, navigation, }) {
                             <button
                                 className="voltar"
                                 type="submit"
+                                onClick={() => navigation.previous()}
                             >
                                 &lt;Voltar
                             </button>
