@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.App {
+    position: absolute;
+    width: 1200px;
+    height: 190px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 80px;
+    border-radius: 10.1505px;
+    background-color: #ffffff;
+}
+.indexedStep {
+    color: white;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    background-color: rgba(211, 211, 211, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indexedStep.accomplished {
+    background-color: rgba(0, 116, 217, 0.8);
+}
+
+.test {
+    position: absolute;
+    display:flex;
+    margin-top: 80px;
+    color: #000000;
+    white-space: nowrap;
+    justify-content: center;
+}
+
+
+.test01 {
+    font-size: 12px;
+    position: absolute;
+    display:flex;
+    margin-top: 135px;
+    color: #000000;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.ped {
+    font-size: 24px;
+    font-family: Poppins;
+    color: #ffffff;
+    margin-top: 100px;
+}
+
+.btn-call{
+    position: relative;
+    justify-items: center;
+    width: 215px;
+    height: 86px;
+    margin-top: 250px;
+    background: #FE4347;
+    font-family: Archivo;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 8px;
+}
+
+.btn-call-entregador{
+    position: absolute;
+    justify-items: center;
+    width: 215px;
+    height: 86px;
+    margin-top: 350px;
+    background: #FE4347;
+    font-family: Archivo;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 8px;
+}
+
+.rastreio{
+    position: absolute;
+    display: flex;
+    margin-top: -100px;
+    width: 500px;
+    height: 50px;
+    border-radius: 100px;
+    left: 800px;
+}
+
+.pedidos01 {
+    display: flex;
+    margin-top: 150px;
+    background: #FFFFFF;
+    box-shadow: 0px 5.07527px 5.07527px rgba(0, 0, 0, 0.25);
+    border-radius: 10.1505px;
+}
