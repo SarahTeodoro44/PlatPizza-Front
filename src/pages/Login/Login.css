@@ -60,6 +60,9 @@
     border: none;
     border-radius: 8px;
 }
+.btn-login:hover{
+    background-color: #D0272B;
+}
 
 .btn-pedido{
     background: #00C157;
@@ -125,7 +128,12 @@
     margin-top: 120px;
     left: 400px;
 }
-
+.icons-social:hover , .icons-social2:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
 .new-account{
     display: flex;
     position: absolute;

@@ -37,6 +37,8 @@
     position: absolute;
     left: 9%;
     margin:-40%;
+    width: 72% !important;
+
   }
   .search{
     position: absolute;
