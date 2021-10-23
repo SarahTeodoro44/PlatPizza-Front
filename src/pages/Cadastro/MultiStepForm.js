@@ -2,16 +2,18 @@ import { useForm, useStep } from 'react-hooks-helper'
 import { Cadastro } from './Cadastro'
 import { Cadastro01 } from './Cadastro01'
 import { Cadastro02 } from './Cadastro02'
+import { Login } from '../Login/Login'
 
 import { useState } from 'react'
 
 const defaultData = {
-    fullName: "",
-    cpf: "",
-    celular: "",
+    nomeVM: "",
+    cpfVM: "",
+    telefoneVM: "",
+    apelidoVM: "",
 
-    email: "",
-    senha: "",
+    emailVM: "",
+    senhaVM: "",
     repetirSenha: ""
 }
 
@@ -41,6 +43,8 @@ export const MultiStepForm = () => {
             return <Cadastro01 {...props} />
         case 'cadastro02':
             return <Cadastro02 {...props} />
+        case 'login':
+            return <Login {...props} />
     }
 
     // function handleSubmit(event) {

@@ -10,10 +10,16 @@ import { PagErro } from "./pages/PagErro/PagErro";
 import { Cardapio } from "./pages/Cardapio/Cardapio"
 import { MultiStepForm } from './pages/Cadastro/MultiStepForm'
 
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'
+
+import { AuthContextProvider } from './contexts/AuthContext'
 
 function App() {
+
   return (
-    <>
+    <AuthContextProvider>
+      <ToastContainer />
       <Router>
         <Switch>
           <Route exact path="/home" component={Home} />
@@ -26,7 +32,7 @@ function App() {
           <Route exact path="/cardapio" component={Cardapio} />
         </Switch>
       </Router>
-    </>
+    </AuthContextProvider>
   );
 }
 

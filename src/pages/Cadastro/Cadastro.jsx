@@ -8,7 +8,7 @@ import Et from '../../assets/icons/LogoEt01.png';
 
 export function Cadastro({ formData, setForm, navigation }) {
 
-    const { fullName, cpf, celular } = formData;
+    const { nomeVM, cpfVM, telefoneVM } = formData;
 
 
     return (
@@ -29,8 +29,8 @@ export function Cadastro({ formData, setForm, navigation }) {
                                     type="text"
                                     className="form-email edit-inp"
                                     placeholder="Nome Completo"
-                                    name="fullName"
-                                    value={fullName}
+                                    name="nomeVM"
+                                    value={nomeVM}
                                     onChange={setForm}
                                 />
 
@@ -38,8 +38,8 @@ export function Cadastro({ formData, setForm, navigation }) {
                                     type="text"
                                     className="form-cpf edit-inp"
                                     placeholder="CPF"
-                                    name="cpf"
-                                    value={cpf}
+                                    name="cpfVM"
+                                    value={cpfVM}
                                     onChange={setForm}
                                 />
 
@@ -47,8 +47,8 @@ export function Cadastro({ formData, setForm, navigation }) {
                                     type="text"
                                     className="form-celular edit-inp"
                                     placeholder="Celular"
-                                    name="celular"
-                                    value={celular}
+                                    name="telefoneVM"
+                                    value={telefoneVM}
                                     onChange={setForm}
                                 />
 
