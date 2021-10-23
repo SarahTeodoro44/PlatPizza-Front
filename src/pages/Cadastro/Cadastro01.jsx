@@ -45,7 +45,7 @@ export function Cadastro01({ formData, setForm, navigation, }) {
                 <img className="banner-login" src={BannerLogin} alt="banner" />
                 <div className="cadastro-area">
                     <div className="info">
-                        <p>Digite seus Dados:</p>
+                        <p class="digt">Digite seus Dados:</p>
                     </div>
                     <form onSubmit={handleNewCadastro}>
                         <div className="cadastro-area2">
@@ -76,7 +76,7 @@ export function Cadastro01({ formData, setForm, navigation, }) {
 
 
                             <button
-                                className="btn"
+                                className="btn-avancar"
                                 type="submit"
                             >
                                 Finalizar

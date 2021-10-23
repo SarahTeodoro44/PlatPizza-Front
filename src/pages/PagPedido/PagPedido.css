@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+.nomePizza{
+    position: absolute;
+    display:flex;
+    left: 500px;
+    width: 330px;
+    height: 56px;
+    margin-top: -265px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 0px;
+    align-items: center;
+    letter-spacing: 0.14em;
+    color: #FFFFFF;
+}
+
+.categoria {
+    position: absolute;
+    display:flex;
+    left: 500px;
+    width: 330px;
+    height: 56px;
+    margin-top: -190px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 0px;
+    align-items: center;
+    letter-spacing: 0.14em;
+    color: #FFFFFF;
+}
+
+.imgpizza{
+    position: absolute;
+    margin-top: 120px;
+}
+
+.btn-adc{
+    position: absolute;
+    justify-items: center;
+    width: 215px;
+    height: 46px;
+    left: 500px;
+    margin-top: 200px;
+    background: #FE4347;
+    font-family: Archivo;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 8px;
+}
+
+.valor {
+    position: absolute;
+    display:flex;
+    left: 500px;
+    width: 330px;
+    height: 56px;
+    margin-top: -120px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 0px;
+    align-items: center;
+    letter-spacing: 0.18em;
+    color: #FFA927;
+    
+}
+
+.bebidas {
+    display: flex;
+    margin-top: 500px;
+    background: #FFFFFF;
+    box-shadow: 0px 5.07527px 5.07527px rgba(0, 0, 0, 0.25);
+    border-radius: 10.1505px;
+}
+
+.btn-tabela {
+    font-size: 30px;
+    text-align: center;
+    height: 40px;
+    width: 38px;
+    border: none;
+    color: #FFFFFF;
+    align-items: center;
+    background: #FE4347;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.carrinho{
+    margin-top: 60px;
+
+}
+
+.invisel{
+    margin-top: 90px;
+}
+
+.btn-pedido {
+    align-items: center;
+    position: fixed;
+    display: block;
+    color: #FFFFFF;
+    align-items: center;
+    background: #00C157;
+    border: none;
+    border-radius: 15px;
+    width: 160px;
+    height: 60px;
+    left: 330px;
+    margin-top: 60px;
+}

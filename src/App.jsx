@@ -9,6 +9,7 @@ import { Cadastro02 } from "./pages/Cadastro/Cadastro02";
 import { PagErro } from "./pages/PagErro/PagErro";
 import { Cardapio } from "./pages/Cardapio/Cardapio"
 import { MultiStepForm } from './pages/Cadastro/MultiStepForm'
+import { PagPedido } from "./pages/PagPedido/PagPedido";
 
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
@@ -30,6 +31,7 @@ function App() {
           <Route exact path="/cadastro02" component={Cadastro02} />
           <Route exact path="/pagerro" component={PagErro} />
           <Route exact path="/cardapio" component={Cardapio} />
+          <Route exact path="/pagpedido" component={PagPedido} />
         </Switch>
       </Router>
     </AuthContextProvider>
