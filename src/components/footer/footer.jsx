@@ -25,10 +25,10 @@ export function Footer() {
                                 <div className="social-text">
                                     <p>Nossas Redes Sociais</p>
                                 </div>
-                                <div className="icons-nav"><a className="" href=""><img width="100" src={Whatsapp} /></a></div>
-                                <div className="icons-nav"><a className="" href=""><img width="100" src={Twitter} /></a></div>
-                                <div className="icons-nav"><a className="" href=""><img width="100" src={Facebook} /></a></div>
-                                <div className="icons-nav"><a className="" href=""><img width="100" src={Instagram} /></a></div>
+                                <div className="icons-nav"><a className="" target="_blank" href="https://api.whatsapp.com/send?1=pt_br&phone=5519999999999"><img width="100" src={Whatsapp} /></a></div>
+                                <div className="icons-nav"><a className="" target="_blank" href="https://twitter.com"><img width="100" src={Twitter} /></a></div>
+                                <div className="icons-nav"><a className="" target="_blank" href="https://facebook.com"><img width="100" src={Facebook} /></a></div>
+                                <div className="icons-nav"><a className="" target="_blank" href="https://instagram.com"><img width="100" src={Instagram} /></a></div>
                             </div>
                         </div>
                     </div>

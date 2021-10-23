@@ -39,6 +39,14 @@
     right: 75%;
 }
 
+.login-icon-header {
+    margin-top: 12px;
+}
+
+.contact-icon-header {
+    margin-top: -14px;
+}
+
 @media(max-width: 768px) {
     .logo-header {
         width: 110px;

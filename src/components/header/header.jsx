@@ -27,19 +27,19 @@ export function Header() {
             <div class="collapse navbar-collapse center-content" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <Link to="/home"><img class="menu-icon-header" width="120" src={Inicio} alt="Inicio" /></Link>
+                        <Link to="/home"><img class="menu-icon-header" width="120" src={Inicio} title="Inicio" alt="Inicio" /></Link>
                     </li>
                     <li class="nav-item">
-                    <Link to="/home"><img class="menu-icon-header" width="120" src={Pesquisa} alt="Pesquisa" /></Link>
+                    <Link to="/home"><img class="menu-icon-header" width="120" src={Pesquisa} title="Pesquisa" alt="Pesquisa" /></Link>
                     </li>
                     <li class="nav-item">
-                    <Link to="./cardapio"><img class="menu-icon-header" width="120" src={Cardapio} alt="Cardapio" /></Link>
+                    <Link to="./cardapio"><img class="menu-icon-header" width="120" src={Cardapio} title="Cardápio" alt="Cardapio" /></Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onClick={navigateToContato}><img class="menu-icon-header" width="120" src={Contato} alt="Contato" /></a>
+                        <a class="nav-link" onClick={navigateToContato}><img class="menu-icon-header contact-icon-header" width="120" src={Contato} title="Contato" alt="Contato" /></a>
                     </li>
                     <li class="nav-item">
-                        <Link to="./login"><img class="menu-icon-header" width="120" src={User} alt="Contato" /></Link>
+                        <Link to="./login"><img class="menu-icon-header login-icon-header" width="105" src={User} title="Login" alt="Login" /></Link>
                     </li>
                 </ul>
             </div>

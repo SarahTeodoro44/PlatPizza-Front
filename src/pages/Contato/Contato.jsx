@@ -15,7 +15,7 @@ export  function Contato(){
                         <div className="col-12 col-lg-6">
                             <div className="d-flex flex-column">
                                 <div className="mx-lg-auto">
-                                    <div className="d-flex">
+                                    <div className="d-flex d-flex-style-1">
                                         <img src={relogioIcon} alt="Relógio" className="imgIconInfo"/>
                                         <span>Funcionamento</span>                       
                                     </div>
@@ -29,7 +29,7 @@ export  function Contato(){
                         <div className="col-12 col-lg-6">
                             <div className="d-flex flex-column">
                                 <div className="mx-lg-auto">
-                                    <div className="d-flex">
+                                    <div className="d-flex d-flex-style-1">
                                         <img src={locaIcon} alt="Localização" className="imgIconInfo"/>
                                         <span>Nossa Localização</span>
                                     </div> 
@@ -52,13 +52,13 @@ export  function Contato(){
                 </div>
 
                 <div className="forms-duvida">
-                    <form id="form1"> 
+                    <form id="form1" action=""> 
                         <h1>Eae, ficou alguma duvida? nos conte aqui.</h1>
                         <div className="row">
                             <div className="col-lg-4 col-12">
                                 <div className="d-flex flex-column">
                                     <input type="text" placeholder="Nome Completo" className="mb-12"></input>
-                                    <input type="text"placeholder="E-mail"></input>
+                                    <input type="email" required placeholder="E-mail"></input>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-12">
