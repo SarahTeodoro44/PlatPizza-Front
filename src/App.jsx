@@ -10,6 +10,7 @@ import { PagErro } from "./pages/PagErro/PagErro";
 import { Cardapio } from "./pages/Cardapio/Cardapio"
 import { MultiStepForm } from './pages/Cadastro/MultiStepForm'
 import { PagPedido } from "./pages/PagPedido/PagPedido";
+import { PagManutencao } from "./pages/PagManutencao/PagManutencao";
 
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
@@ -32,6 +33,7 @@ function App() {
           <Route exact path="/pagerro" component={PagErro} />
           <Route exact path="/cardapio" component={Cardapio} />
           <Route exact path="/pagpedido" component={PagPedido} />
+          <Route exact path="/pagmanutencao" component={PagManutencao} />
         </Switch>
       </Router>
     </AuthContextProvider>
