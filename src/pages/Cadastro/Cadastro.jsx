@@ -53,7 +53,7 @@ export function Cadastro({ formData, setForm, navigation }) {
                                 />
 
                                 <button
-                                    className="btn"
+                                    className="btn-avancar"
                                     onClick={() => navigation.next()}
                                 >
                                     Avançar

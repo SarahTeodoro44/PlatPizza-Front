@@ -132,7 +132,7 @@
 }
 
 
-.btn{
+.btn-avancar{
     position: relative;
     justify-items: center;
     width: 215px;
@@ -163,7 +163,7 @@
 }
 
 .voltar {
-    background-image: none;
+    position: relative;
     text-align: center;
     color: #9C98A6;
     font-size: 18px;
@@ -261,7 +261,7 @@
         left: 50px;
     }
 
-    .btn{
+    .btn-avancar{
         position: relative;
         justify-items: center;
         width: 215px;

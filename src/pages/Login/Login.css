@@ -61,6 +61,10 @@
     border-radius: 8px;
 }
 
+.btn-pedido{
+    background: #00C157;
+}
+
 .hr-2{
     position: absolute;
     width: 476.74px;
