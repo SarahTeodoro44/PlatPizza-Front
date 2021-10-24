@@ -16,7 +16,6 @@ export function Home() {
         <div>
             <div className="container">
                 <Header />
-
                 <section id="slide">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
@@ -45,33 +44,33 @@ export function Home() {
                         </button>
                     </div>
                 </section>
-            <div class="container"> <br></br> <br></br> <br></br> 
-            <div>
-            < SearchPage  />
-            <a class="" href=""><img class="search" src={Pesquisa} alt="icone pizza vegana"/></a>
-             </div>
-             <br></br> <br></br> <br></br><br></br> <br></br> <br></br> <br></br> <br></br>
-                <div class="row">
-                    <div class="col-md-4">
-                    <div class="gallery-box">
-                    <img class="iconspage" src={VeganIcon} alt="icone pizza vegana"/> 
-                    <img  src={Vegan} alt="pizza vegana"/>
+                <div class="container"> <br></br> <br></br> <br></br> 
+                    <div>
+                        < SearchPage  />
+                        <a class="" href=""><img class="search" src={Pesquisa} alt="icone pizza vegana"/></a>
                     </div>
-                    </div>
-                    <div class="col-md-4">
-                    <div class="gallery-box">
-                    <img class="iconspage" src={LactoseIcon} alt="icone pizza sem lactose"/> 
-                    <img  src={Lactose} alt="pizza sem lactose" />
-                    </div>
-                    </div>
-                    <div class="col-md-4">
-                    <div class="gallery-box">
-                    <img class="iconspage" src={GlutenIcon} alt="icone piza sem gluten"/> 
-                    <img  src={Gluten} alt="pizza sem glutem" />
-                    </div>
+                    <br></br> <br></br> <br></br><br></br> <br></br> <br></br> <br></br> <br></br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="gallery-box">
+                                <img class="iconspage" src={VeganIcon} alt="icone pizza vegana"/> 
+                                <img  src={Vegan} alt="pizza vegana"/>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="gallery-box">
+                                <img class="iconspage" src={LactoseIcon} alt="icone pizza sem lactose"/> 
+                                <img  src={Lactose} alt="pizza sem lactose" />
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="gallery-box">
+                                <img class="iconspage" src={GlutenIcon} alt="icone piza sem gluten"/> 
+                                <img  src={Gluten} alt="pizza sem glutem" />
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
                 <Footer />
             </div>
         </div>
