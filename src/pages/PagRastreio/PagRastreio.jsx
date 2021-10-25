@@ -85,6 +85,12 @@ export function PagRastreio() {
             <button class="btn-call-entregador"type="submit"> Ligar para Entregador </button>  
             <button class="btn-call"type="submit"> Ligar para Estabelecimento </button>  
         </div>    
+        <div class="iframe01">
+        <p class="p-rastreio">Rastreio:</p>
+        </div>
+        <div class="iframe02">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.0731842487385!2d-47.38355009321429!3d-22.38859834833483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c879e40b9729d5%3A0xfb49f8df810b81b6!2sR.%20das%20Laranjeiras%2C%20353%20-%20Jardim%20Maria%20Rosa%2C%20Araras%20-%20SP%2C%2013609-052!5e0!3m2!1spt-BR!2sbr!4v1632499334778!5m2!1spt-BR!2sbr" width="591" height="191" frameborder="0"></iframe>
+        </div>
        
         <div class="pedidos01">
             <div class="table-responsive col-lg-12">
@@ -104,7 +110,7 @@ export function PagRastreio() {
                             <td>1</td>
                             <td>R$99,99</td>
                             <td>R$99,99</td>
-                            <td><button class="btn-tabela" type="submit"> + </button></td>
+                            <td><button type="button" class="btn btn-default btn-circle">X</button></td>
                         </tr>
                         <tr>
                             <td><img src={bebida02}/></td>
@@ -112,7 +118,7 @@ export function PagRastreio() {
                             <td>2</td>
                             <td>R$99,99</td>
                             <td>R$99,99</td>
-                            <td><button class="btn-tabela" type="submit"> + </button></td>
+                            <td><button type="button" class="btn btn-default btn-circle">X</button></td>
                         </tr>
                     </tbody>
                 </Table>

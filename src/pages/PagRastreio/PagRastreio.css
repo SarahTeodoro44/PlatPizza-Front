@@ -56,9 +56,9 @@
 .btn-call{
     position: relative;
     justify-items: center;
-    width: 215px;
-    height: 86px;
-    margin-top: 250px;
+    width: 315px;
+    height: 70px;
+    margin-top: 270px;
     background: #FE4347;
     font-family: Archivo;
     font-style: normal;
@@ -71,9 +71,9 @@
 .btn-call-entregador{
     position: absolute;
     justify-items: center;
-    width: 215px;
-    height: 86px;
-    margin-top: 350px;
+    width: 315px;
+    height: 70px;
+    margin-top: 370px;
     background: #FE4347;
     font-family: Archivo;
     font-style: normal;
@@ -82,6 +82,53 @@
     border: none;
     border-radius: 8px;
 }
+
+.iframe01{
+    position: relative;
+    margin-top: -85px;
+    right: -400px;
+    width: 591px;
+    height: 191px;
+}
+.iframe02{
+    position: relative;
+    margin-top: -140px;
+    right: -400px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -o-border-radius: 30px;
+    overflow: hidden;
+    width: 591px;
+    height: 191px;
+}
+
+
+.p-rastreio{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29.6943px;
+    line-height: 45px;
+    color: #ffffff;
+}
+
+.btn-circle {
+    height: 48px;
+    width: 48px;
+    padding: 6px 0px;
+    border-radius: 25px;
+    border-color: #FE4347;
+    color: #FE4347;
+    background: #FFFFFF;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+    font-size: 26px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 30%;
+}
+
 
 .rastreio{
     position: absolute;
