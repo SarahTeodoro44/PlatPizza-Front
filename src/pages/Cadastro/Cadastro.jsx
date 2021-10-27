@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Link, useHistory } from "react-
 import './Cadastro.css';
 import BannerLogin from '../../assets/images/banner_login.png';
 import Et from '../../assets/icons/LogoEt01.png';
+import InputMask from 'react-input-mask';
 
 
 
@@ -32,24 +33,31 @@ export function Cadastro({ formData, setForm, navigation }) {
                                     name="nomeVM"
                                     value={nomeVM}
                                     onChange={setForm}
+                                    required="required"
                                 />
 
-                                <input
+                                <InputMask
                                     type="text"
                                     className="form-cpf edit-inp"
                                     placeholder="CPF"
                                     name="cpfVM"
                                     value={cpfVM}
                                     onChange={setForm}
+                                    required="required"
+                                    mask={"999.999.999-99"}
+                                    maskChar={null}
                                 />
 
-                                <input
+                                <InputMask
                                     type="text"
                                     className="form-celular edit-inp"
                                     placeholder="Celular"
                                     name="telefoneVM"
                                     value={telefoneVM}
                                     onChange={setForm}
+                                    required="required"
+                                    mask={"+55 (99) 99999-9999"}
+                                    maskChar={null}
                                 />
 
                                 <button

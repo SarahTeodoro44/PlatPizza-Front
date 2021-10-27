@@ -6,6 +6,8 @@ import locaIcon from "../../assets/icons/LocalizacaoIcon.png"
 
 import './Contato.css'
 
+import InputMask from 'react-input-mask';
+
 export  function Contato(){
     return(
         <div className="container">
@@ -63,7 +65,7 @@ export  function Contato(){
                             </div>
                             <div className="col-lg-4 col-12">
                                 <div className="d-flex flex-column ">
-                                        <input type="text" placeholder="DDD + Celular" className="mb-12"></input>
+                                        <InputMask type="text" maskChar={null} placeholder="DDD + Celular" className="mb-12" mask={"+55 (99) 99999-9999"} />
                                         <input type="text" placeholder="Motivo de Contato"></input>
                                 </div>  
                             </div>

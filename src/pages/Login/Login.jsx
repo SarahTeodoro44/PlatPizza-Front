@@ -10,6 +10,7 @@ import Et from '../../assets/icons/LogoEt01.png';
 import Facebook from '../../assets/icons/facebook.png';
 import Google from '../../assets/icons/google.png';
 
+import InputMask from 'react-input-mask';
 
 import './Login.css';
 
@@ -47,10 +48,12 @@ export function Login() {
                 <img class="banner-login" src={BannerLogin} alt="banner" />
                 <div class="login-area">
                     <form onSubmit={user.handleSignIn}>
-                        <input
+                        <InputMask
                             type="text"
                             class="form-control-cpf edit-inp"
                             placeholder="CPF"
+                            maskChar={null}
+                            mask={"999.999.999-99"}
                             value={user.userCpfLogin}
                             onChange={event => user.setUserCpfLogin(event.target.value)}
                         />
