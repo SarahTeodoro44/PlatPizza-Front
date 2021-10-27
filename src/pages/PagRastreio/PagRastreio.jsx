@@ -110,7 +110,6 @@ export function PagRastreio() {
                             <td>1</td>
                             <td>R$99,99</td>
                             <td>R$99,99</td>
-                            <td><button type="button" class="btn btn-default btn-circle">X</button></td>
                         </tr>
                         <tr>
                             <td><img src={bebida02}/></td>
@@ -118,7 +117,6 @@ export function PagRastreio() {
                             <td>2</td>
                             <td>R$99,99</td>
                             <td>R$99,99</td>
-                            <td><button type="button" class="btn btn-default btn-circle">X</button></td>
                         </tr>
                     </tbody>
                 </Table>
