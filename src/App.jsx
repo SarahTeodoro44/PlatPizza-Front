@@ -11,7 +11,7 @@ import { Cardapio } from "./pages/Cardapio/Cardapio"
 import { MultiStepForm } from './pages/Cadastro/MultiStepForm'
 import { PagPedido } from "./pages/PagPedido/PagPedido";
 import { PagManutencao } from "./pages/PagManutencao/PagManutencao";
-import { PagRastreio } from "./pages/PagRastreio/PagRastreio"; 
+import { PagRastreio } from "./pages/PagRastreio/PagRastreio";
 
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
