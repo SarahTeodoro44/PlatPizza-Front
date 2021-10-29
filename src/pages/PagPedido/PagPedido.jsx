@@ -9,10 +9,16 @@ import Finalizar from '../../assets/icons/Buy_Icon.png';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown';
 import SplitButton from 'react-bootstrap/SplitButton'
-
-
+import $ from 'jquery'
 import "./PagPedido.css"
 
+
+  $("#button").click(function() {
+    $('').animate({
+      scrollTop: $("#anchor").offset().top
+    }, 2000);
+  });
+  
 export function PagPedido() {
     return (
         <main>
@@ -24,7 +30,8 @@ export function PagPedido() {
                         <span class="nomePizza">NOME DA PIZZA</span>
                         <span class="categoria">CATEGORIA: vegetariana</span>
                         <span class="valor">R$15,00</span>
-                        <button class="btn-adc" type="submit"> + Adicionar ao carrinho</button>    
+                        <a href="#anchor"><button class="btn-adc" type="submit"> + Adicionar ao carrinho</button></a>
+                       
                     </div>
                 </div>
 
@@ -78,15 +85,12 @@ export function PagPedido() {
                         </Table>
                     </div>
                 </div>
-
-                <div class="carrinho">
-                    <Dropdown>
-                        <Dropdown.Toggle variant="dark" bg="dark" ><img src={Carrinho}/><span class="seuCarrinho">SEU CARRINHO</span>
-                        </Dropdown.Toggle>
-                        <Dropdown.Menu>
-                            <Dropdown.Item>
+                <div class="seuCarrinho">
+                    <img src={Carrinho}/><span className="car">SEU CARRINHO </span>
+                </div>
+                <div class="carrinho"  id="anchor">
                                 <div class="table-responsive col-lg-12">
-                                    <Table striped bordered hover size="sm" responsive="md">
+                                    <Table  striped bordered hover size="xl" responsive="md">
                                         <thead>
                                             <tr>
                                                 <th></th>
@@ -104,7 +108,7 @@ export function PagPedido() {
                                                 <td>1</td>
                                                 <td>99,99</td>
                                                 <td>99,99</td>
-                                                <td><button class="btn-tabela" type="submit"> + </button></td>
+                                                <td><button type="button" class="btn btn-default btn-circle">X</button></td>
                                             </tr>
                                             <tr>
                                                 <td><img src={bebida02}/></td>
@@ -112,7 +116,7 @@ export function PagPedido() {
                                                 <td>2</td>
                                                 <td>99,99</td>
                                                 <td>99,99</td>
-                                                <td><button class="btn-tabela" type="submit"> + </button></td>
+                                                <td><button type="button" class="btn btn-default btn-circle">X</button></td>
                                             </tr>
                                             <tr>
                                                 <td></td>
@@ -126,9 +130,6 @@ export function PagPedido() {
                                     </Table>
                                 </div>
                                 <button class="btn-pedido" type="submit"><img src={Finalizar}/> Finalizar Pedido </button>
-                            </Dropdown.Item>
-                        </Dropdown.Menu>
-                    </Dropdown>                         
                 </div>
             </div>
             <Footer/>

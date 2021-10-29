@@ -96,8 +96,8 @@
     margin-left: 30%;
 }
 .carrinho{
-    margin-top: 60px;
-
+    margin-top: 105px;
+    background-color: #FFFFFF;
 }
 
 .invisel{
@@ -106,7 +106,7 @@
 
 .btn-pedido {
     align-items: center;
-    position: fixed;
+    position: absolute;
     display: block;
     color: #FFFFFF;
     align-items: center;
@@ -115,16 +115,26 @@
     border-radius: 15px;
     width: 197px;
     height: 60px;
-    right: 0px;
+    right: 300px;
     margin-top: 45px;
 }
-.dropdown-menu.show{
-    width: 100%;
-    position: initial !important;
-}
-span.seuCarrinho{
+
+.seuCarrinho{
+    position: absolute;
     padding: 0 7% 0 6%;
+    margin-top: 40px;
+    left: 10%;
 }
+
+.car {
+    font-family: Poppins;
+    font-size: 20px;
+}
+.car-img{
+    position: relative;
+}
+
+
 .btn-dark{
     width: 23%;
 }
