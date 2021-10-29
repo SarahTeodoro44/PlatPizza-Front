@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { Dropdown } from './Dropdown'
 
 const SidebarLink = styled(Link)`
     display: flex;

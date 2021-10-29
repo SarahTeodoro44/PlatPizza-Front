@@ -12,6 +12,7 @@ import { MultiStepForm } from './pages/Cadastro/MultiStepForm'
 import { PagPedido } from "./pages/PagPedido/PagPedido";
 import { PagManutencao } from "./pages/PagManutencao/PagManutencao";
 import { PagRastreio } from "./pages/PagRastreio/PagRastreio";
+import { Dashboard } from './pages/Dashboard/Dashboard'
 
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
@@ -36,9 +37,10 @@ function App() {
           <Route exact path="/pagpedido" component={PagPedido} />
           <Route exact path="/pagmanutencao" component={PagManutencao} />
           <Route exact path="/pagrastreio" component={PagRastreio} />
-        </Switch>
-      </Router>
-    </AuthContextProvider>
+          <Route exact path="/dashboard/inicio" component={Dashboard} />
+        </Switch >
+      </Router >
+    </AuthContextProvider >
   );
 }
 
