@@ -1,7 +1,7 @@
 
 import items from '../../pages/Cardapio/allData';
-import VeganIcon from '../../assets/icons/vegana.png';
-import LupaPesquisar from '../../assets/icons/lupa-de-detetive.png'
+import VeganIcon from '../../assets/icons/icone_pizza_vegana.png';
+import LupaPesquisar from '../../assets/icons/icone_lupa.png'
 import { useState } from 'react';
 import './Menu.css';
 import { Button } from './Button';
@@ -25,7 +25,6 @@ export function Menu() {
         const filterdData = items.filter(item => item.category === button);
         setMenuItem(filterdData)
     }
-
 
     return (
         <div className="container">

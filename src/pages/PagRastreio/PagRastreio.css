@@ -151,3 +151,8 @@
 .RSPBprogressBar .RSPBprogression {
     background: #FE4347 !important;
 }
+.icon_ligar{
+    width: 70px !important;
+    position: absolute;
+    top: 0%;
+}

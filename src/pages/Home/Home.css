@@ -35,16 +35,15 @@
   .iconspage{
     display: flex;
     position: absolute;
-    left: 9%;
-    margin:-40%;
-    width: 72% !important;
-
+    left: 6%;
+    margin: -27%;
+    width: 55% !important;  
   }
   .search{
     position: absolute;
-    width:50px ;
-    left: 80%;
-    margin-top: -8px;
+    width: 40px;
+    left: 75%;
+    margin-top: 6px;
   }
   @media(max-width: 768px) {
     .iconspage {

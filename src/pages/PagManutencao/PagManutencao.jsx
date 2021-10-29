@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 import './PagManutencao.css';
 import Et from '../../assets/icons/LogoEt01.png';
-import Inicio from '../../assets/icons/inicio.png';
+import Inicio from '../../assets/icons/icone_inicio.png';
 
 
 export function PagManutencao() {

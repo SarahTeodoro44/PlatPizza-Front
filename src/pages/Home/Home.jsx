@@ -1,14 +1,15 @@
 import { Header } from "../../components/header/header";
 import { Footer } from "../../components/footer/footer";
 import SearchPage  from '../../components/SearchPage';
-import Banner from '../../assets/images/banner.jpeg';
+import Banner01 from '../../assets/images/banner.png';
+import Banner02 from '../../assets/images/banner_foto.png';
 import Vegan from '../../assets/images/vegana.jpg';
 import Gluten from '../../assets/images/sem-glutem.jpg';
 import Lactose from '../../assets/images/lactose.jpg';
-import VeganIcon from '../../assets/icons/vegana.png';
-import LactoseIcon from '../../assets/icons/lactose.png';
-import GlutenIcon from '../../assets/icons/semGluten.png';
-import Pesquisa from '../../assets/icons/pesquisa.png';
+import VeganIcon from '../../assets/icons/icone_pizza_vegana.png';
+import LactoseIcon from '../../assets/icons/icone_sem_lactose.png';
+import GlutenIcon from '../../assets/icons/icone_semGluten.png';
+import Pesquisa from '../../assets/icons/icone_lupa.png';
 import './Home.css';
 
 export function Home() {
@@ -21,17 +22,13 @@ export function Home() {
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src={Banner} class="d-block w-100" alt="Slide 1" />
+                                <img src={Banner02} class="d-block w-100" alt="Slide 1" />
                             </div>
                             <div class="carousel-item">
-                                <img src={Banner} class="d-block w-100" alt="Slide 2" />
-                            </div>
-                            <div class="carousel-item">
-                                <img src={Banner} class="d-block w-100" alt="Slide 3" />
+                                <img src={Banner01} class="d-block w-100" alt="Slide 2" />
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
