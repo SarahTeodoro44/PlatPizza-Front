@@ -41,7 +41,7 @@ export function Menu() {
                                     <div className="item-con" key={item.id}>
                                         <div className="item-container">
                                             <div className="img-wrap">
-                                                <img src={item.image} className="img" alt="" />
+                                                <img src={item.image} className="img-cardapio" alt="" />
                                                 <div className="pizza-info">
                                                     <h2>{item.title}</h2>
                                                     <div className="pizza-pesquisar">
@@ -50,8 +50,6 @@ export function Menu() {
                                                     </div>
                                                 </div>
                                             </div>
-
-
                                         </div>
                                         {/* <img src={item.imgIcon} alt="" className="imgIcon" /> */}
                                     </div>
