@@ -7,9 +7,9 @@ import pizza6 from '../../assets/images/Imagem06.png';
 import pizza7 from '../../assets/images/Imagem07.png';
 import pizza8 from '../../assets/images/Imagem08.png';
 
-import semLactose from '../../assets/icons/lactose.png';
-import semGluten from '../../assets/icons/semGluten.png'
-import veganaIcon from '../../assets/icons/vegana.png';
+import semLactose from '../../assets/icons/icone_sem_lactose.png';
+import semGluten from '../../assets/icons/icone_semGluten.png'
+import veganaIcon from '../../assets/icons/icone_pizza_vegana.png';
 
 export default [
     {

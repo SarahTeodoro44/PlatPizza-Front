@@ -7,6 +7,7 @@ import "react-step-progress-bar/styles.css";
 import Table from 'react-bootstrap/Table'
 import bebida01 from '../../assets/images/bebida01.png';
 import bebida02 from '../../assets/images/bebida02.png';
+import LigarEstabelicimento from '../../assets/icons/icone_telefone_preenchido_Branco.png'; 
 
 export function PagRastreio() {
   const [progress, setProgress] = useState(75);
@@ -82,8 +83,7 @@ export function PagRastreio() {
             </div>
         
         <div>
-            <button class="btn-call-entregador"type="submit"> Ligar para Entregador </button>  
-            <button class="btn-call"type="submit"> Ligar para Estabelecimento </button>  
+            <button class="btn-call"type="submit"><img src={LigarEstabelicimento} width="15" class="d-block w-100 icon_ligar" alt="LigarEstabelicimento" /> Ligar para Estabelecimento </button>  
         </div>    
         <div class="iframe01">
         <p class="p-rastreio">Rastreio:</p>

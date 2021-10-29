@@ -1,16 +1,12 @@
 import { React } from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
-
 import { firebase } from "../../services/firebaseConfig";
-import { api } from "../../services/api";
 
 import BannerLogin from '../../assets/images/banner_login.png';
 import Et from '../../assets/icons/LogoEt01.png';
-import Facebook from '../../assets/icons/facebook.png';
+import Facebook from '../../assets/icons/icone_facebook.png';
 import Google from '../../assets/icons/google.png';
-
-import InputMask from 'react-input-mask';
 
 import './Login.css';
 
@@ -48,12 +44,10 @@ export function Login() {
                 <img class="banner-login" src={BannerLogin} alt="banner" />
                 <div class="login-area">
                     <form onSubmit={user.handleSignIn}>
-                        <InputMask
+                        <input
                             type="text"
                             class="form-control-cpf edit-inp"
                             placeholder="CPF"
-                            maskChar={null}
-                            mask={"999.999.999-99"}
                             value={user.userCpfLogin}
                             onChange={event => user.setUserCpfLogin(event.target.value)}
                         />
@@ -81,7 +75,7 @@ export function Login() {
                     <hr class="hr-4"></hr>
                     <div class="or"><p>OU</p></div>
                     <div class="icons-social">
-                        <div class="icons"><img width="81" src={Facebook} onClick={signInWithFirebaseFb} /></div>
+                        <div class="icons"><img width="71" src={Facebook} onClick={signInWithFirebaseFb} /></div>
                     </div>
                     <div class="icons-social2">
                         <div class="icons"><img width="81" src={Google} onClick={signInWithFirebaseGoogle} /></div>
