@@ -31,6 +31,7 @@ export function AuthContextProvider(props) {
                 if (response.status == 200) {
                     console.log(response);
                     console.log('Login realizado com sucesso!')
+
                 }
             })
             .catch((err) => {

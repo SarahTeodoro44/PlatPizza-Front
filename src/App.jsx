@@ -18,6 +18,7 @@ import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
 
 import { AuthContextProvider } from './contexts/AuthContext'
+import { CartContextProvider } from './contexts/CartContext'
 
 function App() {
 
@@ -33,11 +34,16 @@ function App() {
           <Route exact path="/cadastro01" component={Cadastro01} />
           <Route exact path="/cadastro02" component={Cadastro02} />
           <Route exact path="/pagerro" component={PagErro} />
-          <Route exact path="/cardapio" component={Cardapio} />
-          <Route exact path="/pagpedido" component={PagPedido} />
           <Route exact path="/pagmanutencao" component={PagManutencao} />
-          <Route exact path="/pagrastreio" component={PagRastreio} />
           <Route exact path="/dashboard/inicio" component={Dashboard} />
+
+          <CartContextProvider>
+            <Route exact path="/cardapio" component={Cardapio} />
+            <Route exact path="/pagpedido" component={PagPedido} />
+            <Route exact path="/pagrastreio" component={PagRastreio} />
+          </CartContextProvider>
+
+
         </Switch >
       </Router >
     </AuthContextProvider >

@@ -80,7 +80,17 @@
     font-size: 14px;
 }
 
-.pizza-pesquisar a:hover{
+
+.pizza-pesquisar button{
+    font-size: 15px;
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+}
+
+.pizza-pesquisar button:hover{
     color: #ff5757;
 }
 
@@ -170,3 +180,14 @@
 } */
 
 
+.btn-carrinho{
+    color: #fff;
+    font-size: 15px;
+    background: rgb(109, 214, 4);
+    border: none;
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 15px;
+}

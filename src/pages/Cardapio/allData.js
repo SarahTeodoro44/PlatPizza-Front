@@ -17,6 +17,7 @@ export default [
         image: pizza1,
         category: 'Salgada',
         title: 'Frango com Catupiry',
+        preco: 45,
         imgIcon: veganaIcon
     },
 
@@ -25,6 +26,7 @@ export default [
         image: pizza2,
         category: 'Salgada',
         title: 'Calabresa',
+        preco: 40,
         imgIcon: semGluten
     },
 
@@ -33,6 +35,7 @@ export default [
         image: pizza3,
         category: 'Vegana',
         title: 'Pizza Vegana',
+        preco: 35,
         imgIcon: semLactose
     },
 
@@ -41,6 +44,7 @@ export default [
         image: pizza4,
         category: 'Doce',
         title: 'Chocolate com Morango',
+        preco: 35,
         imgIcon: veganaIcon
     },
 
@@ -49,6 +53,7 @@ export default [
         image: pizza5,
         category: 'Salgada',
         title: 'Carne com Pimentões',
+        preco: 45,
         imgIcon: semGluten
     },
 
@@ -57,6 +62,7 @@ export default [
         image: pizza6,
         category: 'Salgada',
         title: 'Saúdavel com Peperoni',
+        preco: 55,
         imgIcon: semLactose
     },
 
@@ -65,6 +71,7 @@ export default [
         image: pizza7,
         category: 'Vegana',
         title: 'Beringela com Tomates',
+        preco: 40,
         imgIcon: veganaIcon
     },
 
@@ -73,6 +80,7 @@ export default [
         image: pizza8,
         category: 'Salgada',
         title: 'Peperoni',
+        preco: 45,
         imgIcon: semLactose
     },
 ];

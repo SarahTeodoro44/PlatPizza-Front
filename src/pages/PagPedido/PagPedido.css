@@ -90,6 +90,19 @@
     border: none;
     color: #FFFFFF;
     align-items: center;
+    background: #06ce06;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.btn-tabela-menos {
+    font-size: 26px;
+    text-align: center;
+    height: 40px;
+    width: 38px;
+    border: none;
+    color: #FFFFFF;
+    align-items: center;
     background: #FE4347;
     border-radius: 8px;
     margin-top: 20px;
@@ -140,8 +153,19 @@
 }
 .btn-adc:hover, 
 .btn-tabela:hover{
-    background: #D0272B;
+    background: #08af4d;
 }
+
+.btn-tabela-menos:hover{
+    background: #db2e22
+}
+
 .btn-pedido:hover{
  background-color: #239958;
+}
+
+.btn-add-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
