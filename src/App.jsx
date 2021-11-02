@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, withRouter } from "react-router-dom";
 
 import { Home } from "./pages/Home/Home";
 import { Login } from "./pages/Login/Login";
@@ -23,30 +23,30 @@ import { CartContextProvider } from './contexts/CartContext'
 function App() {
 
   return (
-    <AuthContextProvider>
+    <>
       <ToastContainer />
       <Router>
         <Switch>
-          <Route exact path="/home" component={Home} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/contato" component={Contato} />
-          <Route exact path="/cadastro" component={MultiStepForm} />
-          <Route exact path="/cadastro01" component={Cadastro01} />
-          <Route exact path="/cadastro02" component={Cadastro02} />
-          <Route exact path="/pagerro" component={PagErro} />
-          <Route exact path="/pagmanutencao" component={PagManutencao} />
-          <Route exact path="/dashboard/inicio" component={Dashboard} />
+          <AuthContextProvider>
+            <Route exact path="/home" component={Home} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/contato" component={Contato} />
+            <Route exact path="/cadastro" component={MultiStepForm} />
+            <Route exact path="/cadastro01" component={Cadastro01} />
+            <Route exact path="/cadastro02" component={Cadastro02} />
+            <Route exact path="/pagerro" component={PagErro} />
+            <Route exact path="/pagmanutencao" component={PagManutencao} />
+            <Route exact path="/dashboard/inicio" component={Dashboard} />
 
-          <CartContextProvider>
-            <Route exact path="/cardapio" component={Cardapio} />
-            <Route exact path="/pagpedido" component={PagPedido} />
-            <Route exact path="/pagrastreio" component={PagRastreio} />
-          </CartContextProvider>
-
-
+            <CartContextProvider>
+              <Route exact path="/cardapio" component={Cardapio} />
+              <Route exact path="/pagpedido" component={PagPedido} />
+              <Route exact path="/pagrastreio" component={PagRastreio} />
+            </CartContextProvider>
+          </AuthContextProvider >
         </Switch >
       </Router >
-    </AuthContextProvider >
+    </>
   );
 }
 

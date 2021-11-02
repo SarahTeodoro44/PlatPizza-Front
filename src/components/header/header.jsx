@@ -1,22 +1,28 @@
-import { useHistory } from 'react-router-dom';
 
 import './header.css';
-import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link, useHistory } from "react-router-dom";
 import Inicio from '../../assets/icons/icone_inicio.png';
 import Pesquisa from '../../assets/icons/icone_lupa.png';
 import Cardapio from '../../assets/icons/icone_cardapio.png';
 import Contato from '../../assets/icons/icone_contato.png';
 import User from '../../assets/icons/icone_user.png';
 import Et from '../../assets/icons/LogoEt01.png';
+import * as AiIcons from 'react-icons/ai'
+import { useAuth } from '../../hooks/useAuth'
 
 export function Header() {
+    const { isUserLogged, handleLogout } = useAuth();
 
     const history = useHistory();
 
-    function navigateToContato(){
-        history.push('/contato')
-    }
 
+    function goLogin() {
+        if (isUserLogged === false) {
+            return history.push('/login');
+        } else {
+            return history.push('/home')
+        }
+    }
     return (
         <header>
             <nav class="navbar navbar-expand-lg navbar-light border-bottom-white">
@@ -41,11 +47,25 @@ export function Header() {
                             <Link to="./Contato"><img class="menu-icon-header" width="75" src={Contato} title="Contato" alt="Contato" /></Link>
                         </li>
                         <li class="nav-item">
-                            <Link to="./login"><img class="menu-icon-header login-icon-header" width="75" src={User} title="Login" alt="Login" /></Link>
+                            <img class="menu-icon-header login-icon-header" width="75" src={User} onClick={goLogin} title="Login" alt="Login" />
                         </li>
+
+                        {isUserLogged &&
+                            (
+                                <button onClick={handleLogout}>
+                                    Sair
+                                </button>
+                            )
+                        }
+
+
                     </ul>
                 </div>
+                {/* <li className="user-name">
+                    <AiIcons.AiOutlineUser font-size="30px" />
+                    <h1>{user && user.name}</h1>
+                </li> */}
             </nav>
-        </header>
+        </header >
     )
 }

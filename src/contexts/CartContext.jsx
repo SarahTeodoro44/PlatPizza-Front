@@ -1,15 +1,24 @@
 import { createContext, useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
 
-import { ToastContainer, toast, Zoom, Bounce } from "react-toastify";
+import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
+
+import { useAuth } from '../hooks/useAuth'
 
 export const CartContext = createContext({})
 
 export function CartContextProvider(props) {
 
     const [cart, setCart] = useState([]);
-    console.log(cart)
 
+    const [pedidosFinal, setPedidosFinal] = useState([]);
+
+
+    const { user, isUserLogged } = useAuth();
+
+    const history = useHistory();
+    console.log(pedidosFinal)
 
     useEffect(() => {
         const data = localStorage.getItem('Carrinho')
@@ -24,6 +33,21 @@ export function CartContextProvider(props) {
     })
 
 
+    function handleCadastrarPedido() {
+
+        if (isUserLogged === true) {
+            setPedidosFinal([...pedidosFinal, cart])
+            history.push("/pagrastreio");
+        } else {
+            history.push("/login")
+            toast.error("Você precisa estar logado")
+        }
+
+
+
+
+    }
+
     const addToCart = (product) => {
         const exist = cart.find((x) => x.id === product.id)
 
@@ -35,7 +59,6 @@ export function CartContextProvider(props) {
             toast.success(`${product.title} adicionado no carrinho`)
         }
 
-        console.log(product)
     }
 
     const removeFromCart = (product) => {
@@ -49,8 +72,9 @@ export function CartContextProvider(props) {
     }
 
 
+
     return (
-        <CartContext.Provider value={{ addToCart, removeFromCart, cart }} >
+        <CartContext.Provider value={{ addToCart, removeFromCart, cart, handleCadastrarPedido }} >
             {props.children}
         </CartContext.Provider>
     )

@@ -12,7 +12,7 @@ const defaultData = {
     telefoneVM: "",
     apelidoVM: "",
 
-    emailVM: "",
+    emailClienteVM: "",
     senhaVM: "",
     repetirSenha: ""
 }

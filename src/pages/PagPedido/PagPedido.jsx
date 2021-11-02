@@ -21,19 +21,13 @@ import "./PagPedido.css"
 
 
 
-$("#button").click(function () {
-    $('').animate({
-        scrollTop: $("#anchor").offset().top
-    }, 2000);
-});
+
 
 export function PagPedido() {
 
-    const { cart, addToCart, removeFromCart } = useCart();
+    const { cart, addToCart, removeFromCart, handleCadastrarPedido } = useCart();
     const itemsPrice = cart.reduce((a, c) => a + c.preco * c.qty, 0);
 
-    const [maisCounter, setMaisCounter] = useState();
-    const [menosCounter, setMenosCounter] = useState();
 
 
     const [menuBebidas, setMenuBebidas] = useState(bebidas)
@@ -41,17 +35,6 @@ export function PagPedido() {
         <main>
             <div className="container">
                 <Header />
-                <div className="imgpizza">
-                    <img src={Imagem02} width='400px' height="250px" />
-                    <div className="detalhesPizza">
-                        <span className="nomePizza">NOME DA PIZZA</span>
-                        <span className="categoria">CATEGORIA: vegetariana</span>
-                        <span className="valor">R$15,00</span>
-                        <a href="#anchor"><button className="btn-adc" type="submit"> + Adicionar ao carrinho</button></a>
-
-                    </div>
-                </div>
-
                 <div className="bebidas">
                     <div className="table-responsive col-lg-12">
                         <Table striped bordered hover size="xl" responsive="md">
@@ -95,6 +78,7 @@ export function PagPedido() {
                                     })
 
                                 }
+
                             </tbody>
                         </Table>
                     </div>
@@ -121,7 +105,7 @@ export function PagPedido() {
                                         return (
                                             <tr key={item.id}>
                                                 <td>
-                                                    <img src={item.image} width="85px" height="80px" />
+                                                    <img className="img-pizza" src={item.image} />
                                                 </td>
                                                 <td>{item.title}</td>
                                                 <td>{item.qty}</td>
@@ -142,15 +126,6 @@ export function PagPedido() {
                                         )
                                     })
                                 }
-
-                                {/* <tr>
-                                    <td><img src={bebida02} /></td>
-                                    <td>Brahma 350ml</td>
-                                    <td>2</td>
-                                    <td>99,99</td>
-                                    <td>99,99</td>
-                                    <td><button type="button" class="btn btn-default btn-circle">X</button></td>
-                                </tr> */}
                                 <tr>
                                     <td></td>
                                     <td></td>
@@ -162,7 +137,14 @@ export function PagPedido() {
                             </tbody>
                         </Table>
                     </div>
-                    <button className="btn-pedido" type="submit"><img src={Finalizar} /> Finalizar Pedido </button>
+                    <button
+                        className="btn-pedido"
+                        type="submit"
+                        onClick={handleCadastrarPedido}
+                    >
+
+                        <img src={Finalizar} /> Finalizar Pedido
+                    </button>
                 </div>
             </div>
             <Footer />

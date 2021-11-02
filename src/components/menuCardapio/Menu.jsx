@@ -7,11 +7,10 @@ import './Menu.css';
 import { Button } from './Button';
 
 import { useCart } from '../../hooks/useCart'
-
+import { useHistory } from "react-router-dom";
 
 import * as AiIcons from 'react-icons/ai'
 
-import { BrowserRouter as Link } from "react-router-dom";
 export function Menu() {
 
     const allCategories = ['Todas', ...new Set(items.map(item => item.category))];
@@ -21,8 +20,7 @@ export function Menu() {
 
     const user = useCart();
 
-
-    console.log(user.cart)
+    const history = useHistory();
     const filter = (button) => {
 
         if (button === 'Todas') {
@@ -39,12 +37,15 @@ export function Menu() {
 
             <Button button={buttons} filter={filter} />
 
-            <Link to="/login">
-                <button className="btn-carrinho">
-                    <AiIcons.AiOutlineShoppingCart />
-                    Carrinho
-                </button>
-            </Link>
+
+            <button
+                className="btn-carrinho"
+                onClick={() => { history.push('/pagpedido') }}
+            >
+                <AiIcons.AiOutlineShoppingCart />
+                Carrinho
+            </button>
+
             <br></br> <br></br> <br></br>
             <div className="item">
                 <div className="row">
@@ -59,7 +60,7 @@ export function Menu() {
                                                 <div className="pizza-info">
                                                     <h2>{product.title}</h2>
                                                     <div className="pizza-pesquisar">
-                                                        <img src={LupaPesquisar} alt="LupaPesquisar" />
+                                                        {/* <img src={LupaPesquisar} alt="LupaPesquisar" /> */}
                                                         <button onClick={() => user.addToCart(product)}>Adicionar ao carrinho</button>
                                                     </div>
                                                 </div>

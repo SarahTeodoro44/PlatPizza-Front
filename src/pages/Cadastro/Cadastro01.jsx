@@ -11,7 +11,7 @@ import 'react-toastify/dist/ReactToastify.css'
 
 export function Cadastro01({ formData, setForm, navigation, }) {
 
-    const { emailVM, senhaVM, repetirSenha } = formData;
+    const { emailClienteVM, senhaVM, repetirSenha } = formData;
 
     function handleNewCadastro(event) {
         event.preventDefault();
@@ -53,8 +53,8 @@ export function Cadastro01({ formData, setForm, navigation, }) {
                                 type="email"
                                 className="form-email edit-inp"
                                 placeholder="Email"
-                                name="emailVM"
-                                value={emailVM}
+                                name="emailClienteVM"
+                                value={emailClienteVM}
                                 onChange={setForm}
                             />
                             <input

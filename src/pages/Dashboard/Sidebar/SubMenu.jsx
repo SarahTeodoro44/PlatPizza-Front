@@ -129,40 +129,6 @@ export const SubMenu = ({ item }) => {
                 })
 
             }
-
-
-
-
-
-            {/* {
-                subnav && item.subNav.map((item2, index) => {
-                    if (item2.subNav) {
-                        return subnav2 && item2.subNav.map((submenu, index) => {
-                            return (
-                                <DropdownLink2 to={submenu.path} key={index} >
-                                    {submenu.icon}
-                                    <SidebarLabel>{submenu.title}</SidebarLabel>
-                                    {console.log(submenu.title)}
-                                </DropdownLink2>
-                            )
-                        })
-                    }
-
-                })
-            } */}
-
-
-            {/* {subnav && iem.subNav.map((item, index) => {
-
-                return (
-                    <DropdownLink to={item.path} key={index}>
-                        {item.icon}
-                        <SidebarLabel>{item.title}</SidebarLabel>
-                    </DropdownLink>
-                )
-            })
-            } */}
-
         </>
     )
 }

@@ -5,7 +5,7 @@ import * as FaIcons from 'react-icons/fa'
 import * as AiIcons from 'react-icons/ai'
 import { SideBarData } from './SideBarData'
 import { SubMenu } from './SubMenu'
-
+import { useAuth } from '../../../hooks/useAuth'
 import Logo from '../../../assets/icons/LogoEt01.png'
 
 
@@ -213,12 +213,35 @@ const SidebarLabel = styled.span`
     margin-left: 16px;
 `
 
+const Table = styled.div`
+    
+    display: flex;
+    color: #000;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    background-color:#fff;
+    width: 600px;
+    /* height: 400px; */
+    margin-left: 20%;
+    margin-top: 2%;
+    border-radius: 15px;
+
+
+    & h1{
+        font-size: 28px;
+    }
+`
+
+
 
 export const Sidebar = () => {
 
     const [sidebar, setSideBar] = useState(false);
+    const { user } = useAuth();
 
     const menuRef = useRef();
+
 
     useEffect(() => {
         const handler = (event) => {
@@ -259,7 +282,7 @@ export const Sidebar = () => {
                 </NavLogo>
                 <NavUser>
                     <AiIcons.AiOutlineUser className="navIcon" color="#ff5757" font-size="40px" />
-                    <NavNome> Nome Usuario</NavNome>
+                    <NavNome>{user.nome}</NavNome>
                 </NavUser>
             </Nav>
 
@@ -284,6 +307,8 @@ export const Sidebar = () => {
                 </SidebarWrap>
             </SidebarNav>
             <Container sidebar={sidebar}>
+
+
 
             </Container>
         </Body>

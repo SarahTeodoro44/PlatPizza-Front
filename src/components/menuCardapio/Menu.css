@@ -120,8 +120,8 @@
     position: absolute;
     top: 35px;
     left: 35px;
-    border-top: 3px solid #d7dce1;
-    border-left: 3px solid #d7dce1;
+    border-top: 3px solid #101111;
+    border-left: 3px solid #101111;
     transition: all 0.5s ease 0s;
     z-index: 9994;
 }
@@ -134,8 +134,8 @@
     position: absolute;
     bottom: 35px;
     right: 35px;
-    border-bottom: 3px solid #d7dce1;
-    border-right: 3px solid #d7dce1;
+    border-bottom: 3px solid #101111;
+    border-right: 3px solid #101111;
     transition: all 0.5s ease 0s;
     z-index: 9994;
 }
@@ -190,4 +190,10 @@
     cursor: pointer;
     margin-top: 25px;
     margin-left: 15px;
+    transition: 300ms;
+    border-radius: 5px;
+}
+
+.btn-carrinho:hover {
+    background: rgb(84, 161, 1);
 }

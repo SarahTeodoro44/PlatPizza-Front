@@ -1,5 +1,5 @@
 import { React } from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link, useHistory } from "react-router-dom";
 
 import { firebase } from "../../services/firebaseConfig";
 
@@ -36,6 +36,7 @@ const signInWithFirebaseFb = () => {
 export function Login() {
 
     const user = useAuth();
+    const history = useHistory();
 
     return (
         <div class="container">
@@ -63,6 +64,7 @@ export function Login() {
                         <button
                             class="btn-login"
                             type="submit"
+                        // onClick={() => history.push('/home')}
                         >
                             Entrar
                         </button>
