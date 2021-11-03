@@ -52,6 +52,7 @@ export function Cadastro01({ formData, setForm, navigation, }) {
                             <input
                                 type="email"
                                 className="form-email edit-inp"
+                                required
                                 placeholder="Email"
                                 name="emailClienteVM"
                                 value={emailClienteVM}
@@ -60,6 +61,7 @@ export function Cadastro01({ formData, setForm, navigation, }) {
                             <input
                                 type="password"
                                 className="form-senha edit-inp"
+                                required
                                 placeholder="Senha"
                                 name="senhaVM"
                                 value={senhaVM}
@@ -68,6 +70,7 @@ export function Cadastro01({ formData, setForm, navigation, }) {
                             <input
                                 type="password"
                                 className="form-confirma-senha edit-inp"
+                                required
                                 placeholder="Confirmação Senha"
                                 name="repetirSenha"
                                 value={repetirSenha}

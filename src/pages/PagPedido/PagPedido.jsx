@@ -35,13 +35,14 @@ export function PagPedido() {
         <main>
             <div className="container">
                 <Header />
+                <h2 className="tittle-h2">Gostaria de adicionar alguma bebida no seu pedido? </h2>
                 <div className="bebidas">
                     <div className="table-responsive col-lg-12">
                         <Table striped bordered hover size="xl" responsive="md">
                             <thead>
                                 <tr>
                                     <th></th>
-                                    <th>Adicionar Bebidas:</th>
+                                    <th>Bebidas:</th>
                                     <th>Preço</th>
                                     <th></th>
                                 </tr>
@@ -53,7 +54,7 @@ export function PagPedido() {
                                             <tr key={bebida.id}>
                                                 <td><img src={bebida.image} /></td>
                                                 <td>{bebida.title}</td>
-                                                <td>R$ {bebida.preco}</td>
+                                                <td>R$ {bebida.preco},00</td>
                                                 {/* <td>R$ 99,99</td> */}
                                                 <td>
                                                     <div className="btn-add-wrap">
@@ -109,8 +110,8 @@ export function PagPedido() {
                                                 </td>
                                                 <td>{item.title}</td>
                                                 <td>{item.qty}</td>
-                                                <td>R$ {item.preco}</td>
-                                                <td>R$ {item.qty * item.preco}</td>
+                                                <td>R$ {item.preco},00</td>
+                                                <td>R$ {item.qty * item.preco},00</td>
                                                 <td>
                                                     <button
                                                         type="button"
@@ -132,7 +133,7 @@ export function PagPedido() {
                                     <td></td>
                                     <td></td>
                                     <td><strong>Total:</strong> </td>
-                                    <td>R$ {itemsPrice}</td>
+                                    <td>R$ {itemsPrice},00</td>
                                 </tr>
                             </tbody>
                         </Table>

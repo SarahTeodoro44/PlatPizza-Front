@@ -7,6 +7,7 @@ import Cardapio from '../../assets/icons/icone_cardapio.png';
 import Contato from '../../assets/icons/icone_contato.png';
 import User from '../../assets/icons/icone_user.png';
 import Et from '../../assets/icons/LogoEt01.png';
+import Exit from  '../../assets/icons/Exit.png';
 import * as AiIcons from 'react-icons/ai'
 import { useAuth } from '../../hooks/useAuth'
 
@@ -52,13 +53,20 @@ export function Header() {
 
                         {isUserLogged &&
                             (
-                                <button onClick={handleLogout}>
-                                    Sair
+                                <button
+                                
+                                 onClick={handleLogout}>
+                                    <img src={Exit} title="exit" alt="exit" />
+                                
                                 </button>
                             )
                         }
-
-
+                              <button
+                               className="btn-carrinho-header"
+                               onClick={() => { history.push('/pagpedido') }}>
+                                <AiIcons.AiOutlineShoppingCart />
+                                Carrinho
+                             </button>
                     </ul>
                 </div>
                 {/* <li className="user-name">

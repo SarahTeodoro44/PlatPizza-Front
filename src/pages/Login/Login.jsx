@@ -1,5 +1,6 @@
 import { React } from "react";
 import { BrowserRouter as Router, Route, Switch, Link, useHistory } from "react-router-dom";
+import InputMask from 'react-input-mask';
 
 import { firebase } from "../../services/firebaseConfig";
 
@@ -45,17 +46,21 @@ export function Login() {
                 <img class="banner-login" src={BannerLogin} alt="banner" />
                 <div class="login-area">
                     <form onSubmit={user.handleSignIn}>
-                        <input
+                    <InputMask
                             type="text"
                             class="form-control-cpf edit-inp"
+                            required
                             placeholder="CPF"
                             value={user.userCpfLogin}
                             onChange={event => user.setUserCpfLogin(event.target.value)}
+                            mask={"999.999.999-99"}
+                            maskChar={null}
                         />
 
                         <input
                             type="password"
                             class="form-control-senha edit-inp"
+                            required
                             placeholder="Senha"
                             value={user.userSenhaLogin}
                             onChange={event => user.setUserSenhaLogin(event.target.value)}

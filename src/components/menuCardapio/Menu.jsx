@@ -38,13 +38,7 @@ export function Menu() {
             <Button button={buttons} filter={filter} />
 
 
-            <button
-                className="btn-carrinho"
-                onClick={() => { history.push('/pagpedido') }}
-            >
-                <AiIcons.AiOutlineShoppingCart />
-                Carrinho
-            </button>
+           
 
             <br></br> <br></br> <br></br>
             <div className="item">
@@ -59,6 +53,7 @@ export function Menu() {
                                                 <img src={product.image} className="img-cardapio" alt="" />
                                                 <div className="pizza-info">
                                                     <h2>{product.title}</h2>
+                                                    <h3 className="preco">R${product.preco},00</h3>
                                                     <div className="pizza-pesquisar">
                                                         {/* <img src={LupaPesquisar} alt="LupaPesquisar" /> */}
                                                         <button onClick={() => user.addToCart(product)}>Adicionar ao carrinho</button>

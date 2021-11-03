@@ -60,6 +60,25 @@
     font-size: 21px;
     margin-left: 10px;
 }
+.btn-carrinho-header{
+    color: #fff;
+    font-size: 20px;
+    background: rgb(50 154 88);
+    margin: 0;
+    margin-top: 25px;
+    margin-left: 100px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    justify-items: end;
+    transition: 300ms;
+    border-radius: 15px;
+}
+
+.exit {
+    border: none !important;
+    background: none !important;
+}
 @media(max-width: 768px) {
     .logo-header {
         width: 110px;

@@ -82,7 +82,7 @@
 
 
 .pizza-pesquisar button{
-    font-size: 15px;
+    font-size: 20px;
     background:none;
     border:none;
     margin:0;
@@ -196,4 +196,11 @@
 
 .btn-carrinho:hover {
     background: rgb(84, 161, 1);
+}
+
+.preco{
+   color: rgb(84, 161, 1);
+   background-color: #333;
+   border-radius: 10px;
+   width: 110px;
 }
